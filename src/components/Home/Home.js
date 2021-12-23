@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import  Typewriter from "typewriter-effect";
 
+import './Home.css'
 
 function Home() {
   return (
@@ -20,7 +22,19 @@ function Home() {
               </h1>
 
               <div style={{ padding: 50,}}>
-                <Type />
+              <Typewriter
+      options={{
+        strings: [
+          "Developer",
+          "MERN Stack Developer",
+          "Android Application Developer",
+          "Open Source Contributor",
+        ],
+        autoStart: true,
+        loop: true,
+        deleteSpeed: 50,
+      }}
+    />
               </div>
             </Col>
           </Row>
