@@ -18,7 +18,7 @@ const API = "https://api.github.com";
 const repos = {
     show: true,
     heading: "Recent Projects",
-    username: "hashirshoaeb", //i.e."johnDoe12Gh"
+    username: "bikramoli", //i.e."johnDoe12Gh"
     length: 4,
     specfic: [],
   };
@@ -26,7 +26,7 @@ const repos = {
 const Project = ({ heading, username, length, specfic }) => {
   const allReposAPI = `${API}/users/bikramoli/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/bikramoli`;
-  const dummyProjectsArr = new Array(repos.length + repos.specfic.length).fill(
+  const dummyProjectsArr = new Array(repos.specfic.length).fill(
     dummyProject
   );
 

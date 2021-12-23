@@ -1,72 +1,43 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import "./Footer.css";
+import Container from "react-bootstrap/Container";
+import { FaHeart, FaReact } from "react-icons/fa";
 
-function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+const Footer = () => {
+  const bgStyle = { backgroundColor: "#f5f5f5" };
+
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by BIKRAM OLI</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} BO</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/bikramoli"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://twitter.com"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <footer style={bgStyle} className="mt-auto py-5 text-center ">
+      <Container>
+      I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
+      email: 
+        <a
+          className=""
+          rel="noopener"
+          href="https://github.com/"
+          aria-label="My GitHub"
+        >
+          "bikramoli75@gmail.com",
+        </a>{" "}
+        <br/>
+        <i className="fas fa-code" /> by{" "}
+        <a
+          className=""
+          rel="noopener"
+          href="https://github.com/"
+          aria-label="My GitHub"
+        >
+          B I K R A M  O L I
+        </a>{" "}
+        using <FaReact />
+        <p>
+          <small className="text-muted">
+            Project code is open source. Feel free to fork and make your own
+            version.
+          </small>
+        </p>
+      </Container>
+    </footer>
   );
-}
+};
 
 export default Footer;
