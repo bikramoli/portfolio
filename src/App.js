@@ -5,6 +5,7 @@ import "./App.css";
 import NavBar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <NavBar/>
       <Switch>
         <Route exact path = "/" component = {Home} />
+        <Route exact path = "/about" component={About}/>
       </Switch>
       <Footer/>
     </BrowserRouter>
