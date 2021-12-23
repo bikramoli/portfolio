@@ -23,18 +23,18 @@ function Home() {
 
               <div style={{ padding: 50,}}>
               <Typewriter
-      options={{
-        strings: [
-          "Developer",
-          "MERN Stack Developer",
-          "Android Application Developer",
-          "Open Source Contributor",
-        ],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 50,
-      }}
-    />
+                options={{
+                    strings: [
+                    "Developer",
+                    "MERN Stack Developer",
+                    "Android Application Developer",
+                    "Open Source Contributor",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    deleteSpeed: 50,
+                }}
+                />
               </div>
             </Col>
           </Row>
