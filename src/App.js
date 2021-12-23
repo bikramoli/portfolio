@@ -1,4 +1,5 @@
-import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import React from "react";
+import {BrowserRouter, Route, Switch} from "react-router-dom";
 import "./Style.css";
 import "./App.css";
 import NavBar from "./components/Navbar/Navbar";
@@ -7,11 +8,13 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <Router>
-      <NavBar/>
-      <Home/>
+    <BrowserRouter>
+    <NavBar/>
+      <Switch>
+        <Route exact path = "/" component = {Home} />
+      </Switch>
       <Footer/>
-    </Router>
+    </BrowserRouter>
   );
 }
 
