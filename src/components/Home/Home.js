@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import  Typewriter from "typewriter-effect";
+import Introduction from "./Introduction";
 
 import './Home.css'
 
@@ -40,6 +41,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
+      <Introduction/>
     </section>
   );
 }
