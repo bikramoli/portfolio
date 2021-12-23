@@ -1,10 +1,16 @@
 import React from 'react'
+import Introduction from '../Home/Introduction'
+import "./About.css"
 
 
 function About(){
     return(
         <>
-        <h1>About Page</h1>
+         <div className='About'>
+             <section style={{padding: '100px'}}>
+                 <Introduction/>
+             </section>
+         </div>
         </>
     )
 }

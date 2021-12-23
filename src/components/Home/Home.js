@@ -7,6 +7,7 @@ import './Home.css'
 
 function Home() {
   return (
+    
     <section>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
@@ -42,6 +43,7 @@ function Home() {
         </Container>
       </Container>
       <Introduction/>
+      
     </section>
   );
 }
