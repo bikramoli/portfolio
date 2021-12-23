@@ -1,7 +1,6 @@
 .home-section {
   position: relative;
   z-index: -1;
-
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -29,10 +28,9 @@
 }
 
 .home-about-description {
-  color: rgb(131, 11, 11) !important;
+  color: rgb(19, 17, 17) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
-  text-align: center;
 }
 
 .home-about-body {
@@ -101,4 +99,13 @@
 
 .icon-colour {
   color: #700c86 !important;
+}
+.send-message {
+  color: green;
+  text-decoration: underline;
+}
+.avatar {
+  padding-top: 300px !important;
+  width: 400px;
+  position: absolute;
 }

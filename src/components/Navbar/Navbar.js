@@ -39,7 +39,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/">
          
-          <h3>BikramOli</h3>
+          <h3>Bikram.</h3>
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -72,7 +72,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/projects"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen

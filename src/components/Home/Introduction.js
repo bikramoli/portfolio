@@ -1,13 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
+import gumba from "../Assets/gumba.PNG";
 
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaArrowRight, FaLinkedinIn } from "react-icons/fa";
 
 function Introduction() {
   return (
@@ -16,11 +17,10 @@ function Introduction() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              MY <span className="purple">INTRODUCTION </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            I’m Bikram, currently I live in Kathmandu, Nepal working as a Frontend Devloper. My projects include UX design, UI animations, and icon illustration. Being comfortable with code allows me to rapidly prototype and validate experiences. 
               <br />
               <br />I am fluent in classics like
               <i>
@@ -35,11 +35,7 @@ function Introduction() {
                 <b className="purple">
                   Deep Learning and Natural Launguage Processing.
                 </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+                <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
                   {" "}
@@ -50,10 +46,19 @@ function Introduction() {
               <i>
                 <b className="purple"> React.js and Next.js</b>
               </i>
+              </i>
+              <br />
+              <br />
+              In my spare time I like to practice Guitar, play video games, and make mods. I’m always down for hearing about new projects, so feel free to drop me some messages.
+              <br/>
+              <br/>
+              <b className="send-message">
+                  <FaArrowRight/> Send me message
+              </b>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
-            
+            <img src={gumba} alt="Profile"className="avatar"></img>
           </Col>
         </Row>
         <Row>
