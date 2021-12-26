@@ -80,22 +80,25 @@ function Home() {
            <div className="Content content-one">
              <h4>Hello</h4>
              <p>The age which we are living is the age of the democracy</p>
-             <button>Check</button>
+             <button>View Project</button>
            </div>
            <div className="Content content-two">
            <img src={drowsy} alt="name" style={{height: "400px", width: "600px", marginTop: "2rem"}}></img>
            </div>
          </div>
          <div className="Item Item-Two">
-         <div className="Content content-two">
+           <div className="Content content-three">
            <img src={drowsy} alt="name" style={{height: "400px", width: "600px", marginTop: "2rem"}}></img>
            </div>
+           <div className="Content content-four">
            <h4>Hello</h4>
              <p>The age which we are living is the age of the democracy</p>
-             <button>Check</button>
+             <button>View Project</button>
+           </div>
+           
          </div>
-         <div className="Item Item-Three">Item 3</div>
-      </div>
+         {/* <div className="Item Item-Three">Item 3</div> */}
+      </div> 
       <Introduction/>
       
       
