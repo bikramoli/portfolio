@@ -238,3 +238,45 @@
 .icon-colour {
   color: #700c86 !important;
 }
+.Projects-Items {
+  background: chocolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Item {
+  height: 500px;
+  width: 900px;
+  background: blanchedalmond;
+  margin: 3rem;
+}
+.Item-One {
+  align-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Item-Two {
+  background: blueviolet;
+  align-self: flex-start;
+}
+.Item-Three {
+  background: cadetblue;
+  align-self: flex-end;
+}
+.Content {
+  height: 450px;
+}
+.content-one {
+  flex-grow: 1;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-two {
+  flex-grow: 2;
+  text-align: center;
+}

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 import { CgFileDocument } from "react-icons/cg";
-import { FaArtstation, FaHome, FaProjectDiagram } from "react-icons/fa";
+import { FaArtstation, FaHome, FaMailBulk, FaProjectDiagram } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -84,6 +84,16 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
+              >
+                <FaMailBulk style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
             

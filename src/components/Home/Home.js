@@ -2,7 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import  Typewriter from "typewriter-effect";
 import Introduction from "./Introduction";
-import ParticlesBg from 'particles-bg'
+import drowsy from "../Assets/drowsy.jpg"
+
 
 import './Home.css'
 
@@ -71,7 +72,33 @@ function Home() {
           </Row>
         </Container>
       </Container>
+      <Container>
+        
+      </Container>
+      <div className="Projects-Items">
+         <div className="Item Item-One">
+           <div className="Content content-one">
+             <h4>Hello</h4>
+             <p>The age which we are living is the age of the democracy</p>
+             <button>Check</button>
+           </div>
+           <div className="Content content-two">
+           <img src={drowsy} alt="name" style={{height: "400px", width: "600px", marginTop: "2rem"}}></img>
+           </div>
+         </div>
+         <div className="Item Item-Two">
+         <div className="Content content-two">
+           <img src={drowsy} alt="name" style={{height: "400px", width: "600px", marginTop: "2rem"}}></img>
+           </div>
+           <h4>Hello</h4>
+             <p>The age which we are living is the age of the democracy</p>
+             <button>Check</button>
+         </div>
+         <div className="Item Item-Three">Item 3</div>
+      </div>
       <Introduction/>
+      
+      
       
     </section>
   );
