@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
-
 import Row from "react-bootstrap/Row";
 import ProjectCard from "./ProjectCard";
 import axios from "axios";
@@ -61,7 +60,7 @@ const Project = ({ heading, username, length, specfic }) => {
   }, [fetchRepos]);
 
   return (
-    <div fluid id="projects" className="bg-light m-0">
+    <div fluid id="projects" className="bg-light pt-5">
       <Container className="">
         <h2 className="display-4 pb-5 text-center">{repos.heading}</h2>
         <Row>

@@ -1,9 +1,9 @@
 import React from 'react'
 import Introduction from '../Home/Introduction'
-import "./About.css"
+import "./Skills.css"
 
 
-function About(){
+function Skills(){
     return(
         <>
          <div className='About'>
@@ -14,4 +14,4 @@ function About(){
         </>
     )
 }
-export default About;
+export default Skills;

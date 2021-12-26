@@ -5,9 +5,10 @@ import "./App.css";
 import NavBar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
-import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
+import Contact from "./components/Contact/Contact";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -18,9 +19,10 @@ function App() {
     <NavBar/>
       <Switch>
         <Route exact path = "/" component = {Home} />
-        <Route exact path = "/about" component={About}/>
+        <Route exact path = "/skill" component={Skills}/>
         <Route exact path = "/projects" component={Projects}/>
         <Route exact path="/resume" component={Resume}/>
+        <Route exact path="/contact" component={Contact}/>
       </Switch>
       <Footer/>
     </BrowserRouter>
