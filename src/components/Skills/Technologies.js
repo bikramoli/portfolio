@@ -10,6 +10,7 @@ import {
   DiGit,
 } from "react-icons/di";
 import { SiPytorch, SiTensorflow, SiFirebase } from "react-icons/si";
+import "./Skills.css";
 
 function Technologies() {
   return (

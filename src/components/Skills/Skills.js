@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import Technologies from "./Technologies";
 
 
 function Skills() {
@@ -32,7 +33,7 @@ function Skills() {
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
-
+        <Technologies/>
       
 
         <h1 className="project-heading">
