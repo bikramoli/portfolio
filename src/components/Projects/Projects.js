@@ -22,7 +22,7 @@ const repos = {
     specfic: [],
   };
 
-const Project = ({ heading, username, length, specfic }) => {
+const Project = ({ length, specfic }) => {
   const allReposAPI = `${API}/users/bikramoli/repos?sort=updated&direction=desc`;
   const specficReposAPI = `${API}/repos/bikramoli`;
   const dummyProjectsArr = new Array(repos.specfic.length).fill(

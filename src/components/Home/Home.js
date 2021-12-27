@@ -75,30 +75,30 @@ function Home() {
       <Container>
         
       </Container>
-      <div className="Projects-Items">
+      <Container className="Projects-Items">
          <div className="Item Item-One">
            <div className="Content content-one">
-             <h4>Hello</h4>
+             <h4 className="Project-Title">Sleepiness Detection System</h4>
              <p>The age which we are living is the age of the democracy</p>
              <button>View Project</button>
            </div>
            <div className="Content content-two">
-           <img src={drowsy} alt="name" style={{height: "400px", width: "600px", marginTop: "2rem"}}></img>
+           <img src={drowsy} alt="name" style={{width:"100%", marginTop: "2rem", borderRadius: '50px', boxShadow:" 0 0 100px black"}}></img>
            </div>
          </div>
          <div className="Item Item-Two">
            <div className="Content content-three">
-           <img src={drowsy} alt="name" style={{height: "400px", width: "600px", marginTop: "2rem"}}></img>
+           <img src={drowsy} alt="name" style={{width:"100%",  marginTop: "2rem", borderRadius:"50px", boxShadow: "0 0 100px black"}}></img>
            </div>
            <div className="Content content-four">
-           <h4>Hello</h4>
+           <h4 className="Project-Title">Hello</h4>
              <p>The age which we are living is the age of the democracy</p>
              <button>View Project</button>
            </div>
            
          </div>
          {/* <div className="Item Item-Three">Item 3</div> */}
-      </div> 
+      </Container> 
       <Introduction/>
       
       

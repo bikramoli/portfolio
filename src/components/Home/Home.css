@@ -239,50 +239,49 @@
   color: #700c86 !important;
 }
 .Projects-Items {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .Item {
-  height: 500px;
-  width: 900px;
-
-  margin: 3rem;
+  max-width: 100%;
+  min-width: 100px;
+  margin-top: 5rem;
 }
 .Item-One {
-  align-self: flex-end;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .Item-Two {
-  align-self: flex-start;
+  /* align-self: flex-start; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.Item-Three {
-  align-self: flex-end;
-}
+
 .Content {
   height: 450px;
 }
 .content-one {
   flex-grow: 1;
-  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  width: 200px;
 }
 .content-two {
   flex-grow: 2;
   text-align: center;
+  max-width: 700px;
+  min-width: 400px;
 }
 .content-three {
   flex-grow: 2;
   text-align: center;
+  max-width: 700px;
+  min-width: 400px;
 }
 .content-four {
   flex-grow: 1;
@@ -290,5 +289,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding-left: 3rem;
+}
+.Project-Title {
+  font-size: 1.8em !important;
+  font-weight: 600 !important;
 }
