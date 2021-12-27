@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Technologies from "./Technologies";
+import Tools from "./Tools";
 
 
 function Skills() {
@@ -39,7 +40,7 @@ function Skills() {
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-       
+        <Tools/>
 
       
       </Container>
