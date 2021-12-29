@@ -74,6 +74,7 @@
 }
 .main-name {
   color: #00ffff;
+  text-shadow: 0 0 2px #87209e;
 }
 @media only screen and (max-width: 556px) {
   .main-name {
@@ -104,8 +105,10 @@
 
 .avatar {
   justify-content: center !important;
-  padding-top: 2em !important;
+  /* padding-top: 2em !important; */
   width: 400px;
+  border-left: solid black;
+  box-shadow: 0 0 80px black;
 }
 
 @media (max-width: 767px) {

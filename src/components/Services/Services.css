@@ -18,3 +18,6 @@ h2 {
     visibility: visible;
   }
 }
+.des {
+  border-bottom: 1px solid rgb(209, 205, 205);
+}
