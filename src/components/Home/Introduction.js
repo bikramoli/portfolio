@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import gumba from "../Assets/gumba.PNG";
-
+import Particles from "../Particle/Particle";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -12,7 +12,9 @@ import { FaArrowRight, FaLinkedinIn } from "react-icons/fa";
 
 function Introduction() {
   return (
+    
     <Container fluid className="home-about-section" id="about">
+      <Particles/>
       <Container>
         <Row>
           <Col md={8} className="home-about-description">

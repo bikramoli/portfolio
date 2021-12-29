@@ -4,35 +4,12 @@ import  Typewriter from "typewriter-effect";
 import Introduction from "./Introduction";
 import drowsy from "../Assets/drowsy.jpg"
 import ParticlesBg from "particles-bg";
+import Particles from "../Particle/Particle";
 
 import './Home.css'
 
 function Home() {
-  let config = {
-    num: [4, 7],
-    rps: 1,
-    radius: [5, 100],
-    life: [1.5, 3],
-    v: [2, 3],
-    tha: [-40, 40],
-    // body: "./img/icon.png", // Whether to render pictures
-    // rotate: [0, 20],
-    alpha: [0.6, 0],
-    scale: [1, 0.1],
-    position: "all",//{x:1100,y:1,width:100,height:100}, // all or center or {x:1,y:1,width:100,height:100}
-    color: ["white"],//["random", "#000"],
-    cross: "dead", // cross or bround
-    random: 15,  // or null,
-    g: 5,    // gravity
-    // f: [2, -1], // force
-    onParticleUpdate: (ctx, particle) => {
-        ctx.beginPath();
-        ctx.rect(particle.p.x, particle.p.y, particle.radius * 2, particle.radius * 2);
-        ctx.fillStyle = particle.color;
-        ctx.fill();
-        ctx.closePath();
-    }
-  };
+  
   return (
     
     <section>
@@ -54,9 +31,9 @@ function Home() {
               <Typewriter
                 options={{
                     strings: [
-                    "Developer",
+                    "Web Designer",
+                    "Frontend Developer",
                     "MERN Stack Developer",
-                    "Android Application Developer",
                     "Open Source Contributor",
                     ],
                     autoStart: true,
@@ -68,7 +45,7 @@ function Home() {
             </Col>
             {/* particle bg */}
             <Col  style={{ paddingBottom: 20 }}>
-            <ParticlesBg type="custom" config={config} bg={true} />
+            <Particles/>
             </Col>
           </Row>
         </Container>
@@ -76,30 +53,35 @@ function Home() {
       <Container>
         
       </Container>
-      <Container className="Projects-Items">
-         <div className="Item Item-One">
-           <div className="Content content-one">
-             <h4 className="Project-Title">Sleepiness Detection System</h4>
-             <p>The age which we are living is the age of the democracy</p>
-             <button>View Project</button>
-           </div>
-           <div className="Content content-two">
-           <img src={drowsy} alt="name" style={{width:"100%", marginTop: "2rem", borderRadius: '50px', boxShadow:" 0 0 100px black"}}></img>
-           </div>
-         </div>
-         <div className="Item Item-Two">
-           <div className="Content content-three">
-           <img src={drowsy} alt="name" style={{width:"100%",  marginTop: "2rem", borderRadius:"50px", boxShadow: "0 0 100px black"}}></img>
-           </div>
-           <div className="Content content-four">
-           <h4 className="Project-Title">Hello</h4>
-             <p>The age which we are living is the age of the democracy</p>
-             <button>View Project</button>
-           </div>
-           
-         </div>
-         {/* <div className="Item Item-Three">Item 3</div> */}
-      </Container> 
+      <div className='services'>
+        <div className='py-5'>
+        <h1 className='text-uppercase text-center py-4 pt-2'>What I do?</h1>
+            
+                <div className='container'>
+                    <div className='row'>
+                        <div className='col-md-4 col-sm-6'>
+                                {/* <FontAwesomeIcon icon={faPencilRuler} size='2x' className='icon__color'/> */}
+                                    <h3 className='pt-2 pb-2'>Web Design</h3>
+                                                    <p className='mb-4'>I can help with the first steps of creating your website with a wireframe or mock-up design. I can make a low-fidelity or high-fidelity mock-up that is professional and responsive</p>
+                            <hr className='break' />
+                            </div>
+                        
+                        {/* - */}
+                        <div className='col-md-4 col-sm-6'>
+                            {/* <FontAwesomeIcon icon={faCode}C size='2x' className='icon__color mt-2'/> */}
+                                    <h3 className='pt-2 pb-2'>Front End Development</h3>
+                                                    <p className='mb-4'>I will bring your website to life with the latest technologies! I can make a simple landing page, static or dynamic site, blog, or e-commerce site. I focus on mobile responsiveness, security, SEO, and accessibility.</p>
+                            <hr className='break' />
+                            </div>
+                            <div className='col-md-4 col-sm-6'>
+                            {/* <FontAwesomeIcon icon={faMobileAlt} size='2x' className='icon__color'/> */}
+                                    <h3 className='pt-2 pb-2'>Mobile Web Specialist</h3>
+                                                    <p className='mb-4'>Having a responsive web site is essentail! Half of all web traffic is from a mobile device! Having a responsive site can also affect your Google ranking! I can make sure your site is ready for the mobile world!</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       <Introduction/>
       
       

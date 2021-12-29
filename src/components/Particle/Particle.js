@@ -1,10 +1,11 @@
 import ParticlesBg from "particles-bg";
 
+
 function Particles(){
     let config = {
         num: [4, 7],
         rps: 1,
-        radius: [5, 100],
+        radius: [1, 100],
         life: [1.5, 3],
         v: [2, 3],
         tha: [-40, 40],
