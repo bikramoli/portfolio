@@ -61,29 +61,6 @@
   transition: all 500ms ease;
 }
 
-/* Ul resect */
-
-.ul-resect,
-.socials ul,
-.list-ico,
-.blog-wrapper .post-meta ul,
-.box-comments .list-comments,
-.widget-sidebar .list-sidebar,
-.widget-tags ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.list-ico {
-  line-height: 2;
-}
-
-.list-ico span {
-  color: #0078ff;
-  margin-right: 10px;
-}
-
 /* Ico Circle */
 
 .ico-circle {
@@ -108,20 +85,6 @@ CONTACT
 
 .contact-mf {
   margin-top: 4rem;
-}
-
-/*
-FOOTER
-*/
-
-footer {
-  text-align: center;
-  color: #fff;
-  padding-bottom: 4rem;
-}
-
-footer .copyright {
-  margin-bottom: 0.3rem;
 }
 
 /*

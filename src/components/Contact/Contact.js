@@ -119,7 +119,7 @@ function Contact(){
                         <ul>
                           <li>
                             <a
-                              href=""
+                              href="https://twitter.com/bikramoli75"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -130,7 +130,7 @@ function Contact(){
                           </li>
                           <li>
                             <a
-                              href=""
+                              href="https://www.linkedin.com/in/bikram-oli-51579016b/"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
@@ -141,7 +141,7 @@ function Contact(){
                           </li>
                           <li>
                             <a
-                              href=""
+                              href="https://Facebook.com"
                               target="_blank"
                               rel="noopener noreferrer"
                             >

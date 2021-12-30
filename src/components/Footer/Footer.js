@@ -1,12 +1,12 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
 import { FaHeart, FaReact } from "react-icons/fa";
-
+import "./Footer.css";
 const Footer = () => {
-  const bgStyle = { backgroundColor: "#f5f5f5" };
+  
 
   return (
-    <footer style={bgStyle} className="mt-auto py-5 text-center ">
+    <footer style={{backgroundColor: "black", color:"white"}} className="mt-auto py-5 text-center">
       <Container>
       I'm currently looking for full-time Software Engineering or Machine Learning opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at",
       email: 
