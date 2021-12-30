@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import gumba from "../Assets/gumba.PNG";
 import Particles from "../Particle/Particle";
+import {Link} from "react-router-dom"
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -54,9 +55,14 @@ function Introduction() {
               In my spare time I like to practice Guitar, play video games, and make mods. I’m always down for hearing about new projects, so feel free to drop me some messages.
               <br/>
               <br/>
-              <b className="send-message">
+              <button onClick={()=>{window.location.href="/contact"}} className="send-message" >
                   <FaArrowRight/> Send me message
-              </b>
+              </button>
+
+              <button style={{marginLeft:"1rem"}} onClick={()=>{window.location.href="/resume"}} className="send-message" >
+                  <FaArrowRight/> View my resume
+              </button>
+              
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -83,7 +89,7 @@ function Introduction() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com"
+                  href="https://twitter.com/bikramoli75"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -93,7 +99,7 @@ function Introduction() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/bikram-oli-51579016b/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"

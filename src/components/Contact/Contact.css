@@ -13,7 +13,7 @@
   content: "";
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #00ffff;
   width: 100px;
   bottom: -12px;
 }
@@ -50,12 +50,12 @@
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px #00ffff;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: #00ffff;
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
@@ -150,13 +150,13 @@ BUTTON
 }
 
 .button:hover {
-  background-color: #0062d3;
+  background-color: #00ffff;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .button-a {
-  background-color: #0078ff;
+  background-color: #3ad1d1;
   color: #fff;
   border-color: #cde1f8;
 }
