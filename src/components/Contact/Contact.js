@@ -21,7 +21,7 @@ function Contact(){
                       </div>
                       <div>
                         <form
-                          action="https://formspree.io/xdoeonlo"
+                          action="https://formspree.io/f/mwkypoqp"
                           method="POST"
                           className="contactForm"
                         >
