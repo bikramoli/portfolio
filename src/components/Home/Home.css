@@ -243,7 +243,7 @@
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: blue !important;
 }
 .Projects-Items {
   align-items: center;
@@ -319,4 +319,7 @@
   cursor: pointer;
   background-color: rgb(37, 3, 3);
   color: #00ffff;
+}
+.purple1 {
+  color: #5430d6;
 }

@@ -23,12 +23,9 @@ function Introduction() {
               MY <span className="purple">INTRODUCTION </span>
             </h1>
             <p className="home-about-body">
-            I’m Bikram, currently I live in Kathmandu, Nepal working as a Frontend Devloper. My projects include UX design, UI animations, and icon illustration. Being comfortable with code allows me to rapidly prototype and validate experiences. 
+            I’m Bikram, but people call me “Biky.” I’m a frontend developer, and I specialize in efficient <b className="purple">Web Technologies and Products</b> that just work across all platforms and browsers. I care deeply about building interfaces that are usable and pleasant for the most number of people possible. Building new Technologies related to Web has always been my passion since i introduced to computer languages.
+            
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> Java, Javascript and Python. </b>
-              </i>
               <br />
               <br />
               My field of Interest's are building new &nbsp;
@@ -50,6 +47,7 @@ function Introduction() {
                 <b className="purple"> React.js and Next.js</b>
               </i>
               </i>
+             
               <br />
               <br />
               In my spare time I like to practice Guitar, play video games, and make mods. I’m always down for hearing about new projects, so feel free to drop me some messages.
