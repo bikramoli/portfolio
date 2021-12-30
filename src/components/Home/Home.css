@@ -76,7 +76,7 @@
   color: #00ffff;
   text-shadow: 0 0 2px #87209e;
 }
-@media only screen and (max-width: 556px) {
+@media only screen and (max-width: 566px) {
   .main-name {
     font-size: 0.8em;
   }
