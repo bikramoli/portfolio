@@ -5,8 +5,8 @@ import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
-import { CgFileDocument } from "react-icons/cg";
-import { FaArtstation, FaBlog, FaFile, FaHome, FaMailBulk, FaProjectDiagram } from "react-icons/fa";
+
+import { FaArtstation, FaBlog, FaHome, FaMailBulk, FaProjectDiagram } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);

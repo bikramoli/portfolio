@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import gumba from "../Assets/gumba.PNG";
 import Particles from "../Particle/Particle";
-import {Link} from "react-router-dom"
+
 import {
   AiFillGithub,
   AiOutlineTwitter,

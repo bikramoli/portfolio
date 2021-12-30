@@ -17,8 +17,9 @@ function App() {
   return (
     <BrowserRouter>
     <NavBar/>
+    <Home/>
       <Switch>
-        <Route exact path = "/" component = { Home } />
+        {/* <Route exact path = "/" component = { Home } /> */}
         <Route exact path = "/skills" component = { Skills } />
         <Route exact path = "/projects" component = { Projects } />
         <Route exact path = "/resume" component = { Resume } />

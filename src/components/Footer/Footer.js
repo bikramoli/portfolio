@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import { FaHeart, FaReact } from "react-icons/fa";
+import {FaReact } from "react-icons/fa";
 import "./Footer.css";
 const Footer = () => {
   
