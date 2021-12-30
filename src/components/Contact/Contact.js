@@ -1,4 +1,5 @@
 import React from "react";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import "./Contact.css";
 
 function Contact(){
@@ -123,7 +124,7 @@ function Contact(){
                               rel="noopener noreferrer"
                             >
                               <span className="ico-circle">
-                                <i className="ion-social-codepen"></i>
+                                <FaTwitter/>
                               </span>
                             </a>
                           </li>
@@ -134,7 +135,7 @@ function Contact(){
                               rel="noopener noreferrer"
                             >
                               <span className="ico-circle">
-                                <i className="ion-social-github"></i>
+                                <FaLinkedin/>
                               </span>
                             </a>
                           </li>
@@ -145,7 +146,7 @@ function Contact(){
                               rel="noopener noreferrer"
                             >
                               <span className="ico-circle">
-                                <i className="ion-social-linkedin"></i>
+                                <FaFacebook/>
                               </span>
                             </a>
                           </li>
