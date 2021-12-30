@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import gumba from "../Assets/gumba.PNG";
 import Particles from "../Particle/Particle";
+import { useHistory } from "react-router-dom";
 
 import {
   AiFillGithub,
@@ -12,6 +13,8 @@ import {
 import { FaArrowRight, FaLinkedinIn } from "react-icons/fa";
 
 function Introduction() {
+  const history = useHistory();
+
   return (
     
     <Container fluid className="home-about-section" id="about">
@@ -53,11 +56,11 @@ function Introduction() {
               In my spare time I like to practice Guitar, play video games, and make mods. I’m always down for hearing about new projects, so feel free to drop me some messages.
               <br/>
               <br/>
-              <button onClick={()=>{window.location.href="/contact"}} className="send-message" >
+              <button onClick={()=>history.push("/contact", {from: "Introduction"})} className="send-message" >
                   <FaArrowRight/> Send me message
               </button>
 
-              <button style={{marginLeft:"1rem"}} onClick={()=>{window.location.href="/resume"}} className="send-message" >
+              <button style={{marginLeft:"1rem"}} onClick={()=>history.push("/resume",{from: "Introduction"})} className="send-message" >
                   <FaArrowRight/> View my resume
               </button>
               

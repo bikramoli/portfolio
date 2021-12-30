@@ -32,7 +32,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/" onClick={() => updateExpanded(false)}>
          
           <h3>Bikram.</h3>
         </Navbar.Brand>
