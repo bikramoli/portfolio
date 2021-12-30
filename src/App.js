@@ -17,13 +17,12 @@ function App() {
   return (
     <BrowserRouter>
     <NavBar/>
-    <Home/>
       <Switch>
-        {/* <Route exact path = "/" component = { Home } /> */}
-        <Route exact path = "/skills" component = { Skills } />
-        <Route exact path = "/projects" component = { Projects } />
-        <Route exact path = "/resume" component = { Resume } />
-        <Route exact path = "/contact" component = { Contact } />
+        <Route  path = "/" exact component = { Home } />
+        <Route  path = "/skills" component = { Skills } />
+        <Route  path = "/projects" component = { Projects } />
+        <Route  path = "/resume" component = { Resume } />
+        <Route  path = "/contact" component = { Contact } />
       </Switch>
       <Footer/>
     </BrowserRouter>
