@@ -26,30 +26,12 @@ function Introduction() {
               MY <span className="purple">INTRODUCTION </span>
             </h1>
             <p className="home-about-body">
-            I’m Bikram, but people call me “Biky.” I’m a frontend developer, and I specialize in efficient <b className="purple">Web Technologies and Products</b> that just work across all platforms and browsers. I care deeply about building interfaces that are usable and pleasant for the most number of people possible. Building new Technologies related to Web has always been my passion since i introduced to computer languages.
-            
+            I’m Bikram, but people call me “Biky.” I’m a Frontend developer, and I am specialize in efficient <b className="purple1">Web Technologies and Products</b> that just work across all platforms and browsers. I care deeply about building interfaces that are usable and pleasant for the most number of people possible. Building new Technologies related to Web has always been my passion since i introduced to computer languages.
+              
               <br />
               <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Deep Learning and Natural Launguage Processing.
-                </b>
-                <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
-              </i>
+              As a frontend developer i am expert with <b className="purple1">HTML, CSS, and Javascript</b> and well-versed in writing in Jquery kind of frameworks such as <b className="purple1">ReactJs, AngularJS, nodeJs,</b> etc. Apart from just knowing and working on these frameworks and technologies, I am very well versed with the preprocessing part, especially of the ones like Cascading Style Sheets &nbsp;
+              
              
               <br />
               <br />

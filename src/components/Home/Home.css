@@ -67,18 +67,41 @@
   font-size: 1.8em !important;
   font-weight: 600 !important;
 }
+.line {
+  height: 110px;
+  width: 9px;
+  background-color: gray;
+  margin-left: 29.2px;
+  position: absolute;
+}
+
+.lin::after {
+  height: 80px;
+  width: 10px;
+  background-color: gray;
+
+  position: absolute;
+}
 
 .heading-name {
   font-size: 5.5em !important;
   padding-left: 45px !important;
+  display: flex;
+  flex-wrap: wrap;
 }
 .main-name {
   color: #00ffff;
   text-shadow: 0 0 2px #87209e;
 }
+
 @media only screen and (max-width: 566px) {
   .main-name {
-    font-size: 0.8em;
+    font-size: 0.4em;
+  }
+}
+@media only screen and (max-width: 996px) {
+  .main-name {
+    font-size: 0.7em;
   }
 }
 
@@ -106,7 +129,7 @@
 .avatar {
   justify-content: center !important;
   /* padding-top: 2em !important; */
-  width: 400px;
+  max-width: 100%;
   border-left: solid black;
   box-shadow: 0 0 80px black;
 }
@@ -115,6 +138,14 @@
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+    width: 100%;
+    margin: 6px 0;
+  }
+  .avatar {
+    max-width: 100%;
+  }
+  .home-about-description {
+    width: 100%;
   }
 }
 
@@ -126,7 +157,7 @@
 
 .home-about-description {
   color: black !important;
-  padding-top: 40px !important;
+  padding-top: 1px !important;
   padding-bottom: 20px !important;
   text-align: right;
 }
@@ -248,57 +279,7 @@
 .Projects-Items {
   align-items: center;
 }
-.Item {
-  max-width: 100%;
-  min-width: 100px;
-  margin-top: 5rem;
-}
-.Item-One {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.Item-Two {
-  /* align-self: flex-start; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
 
-.Content {
-  height: 450px;
-}
-.content-one {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 200px;
-}
-.content-two {
-  flex-grow: 2;
-  text-align: center;
-  max-width: 700px;
-  min-width: 400px;
-}
-.content-three {
-  flex-grow: 2;
-  text-align: center;
-  max-width: 700px;
-  min-width: 400px;
-}
-.content-four {
-  flex-grow: 1;
-  width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 3rem;
-}
 .Project-Title {
   font-size: 1.8em !important;
   font-weight: 600 !important;
@@ -321,5 +302,6 @@
   color: #00ffff;
 }
 .purple1 {
-  color: #5430d6;
+  font-size: 20px;
+  background-color: #d0fdfd;
 }
