@@ -67,20 +67,20 @@
   font-size: 1.8em !important;
   font-weight: 600 !important;
 }
-.line {
+/* .line {
   height: 110px;
   width: 9px;
   background-color: gray;
   margin-left: 29.2px;
   position: absolute;
-}
+} */
 
-.lin::after {
-  height: 80px;
+.line-Up {
+  height: 143px;
   width: 10px;
-  background-color: gray;
-
+  background-color: rgb(95, 93, 93);
   position: absolute;
+  text-decoration: overline;
 }
 
 .heading-name {

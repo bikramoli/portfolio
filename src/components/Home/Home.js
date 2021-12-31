@@ -18,13 +18,13 @@ function Home() {
             <Col md={9} className="home-header">
               
               <h1 style={{ paddingBottom: 15 , marginLeft:"20px"}} className="heading1">
-                B <strong style={{fontSize:"75px", color:"grey", marginLeft:"-1.2px"}}>i</strong> K R A M  <span className="wave" role="img" aria-labelledby="wave" >O L I</span>
+                B <strong className="line-Up"></strong><span style={{marginLeft:"20px"}}> K R A M </span> <span className="wave" role="img" aria-labelledby="wave" >O L I</span>
                 <div className="line"></div>
               </h1>
              
 
               <h1 className="heading-name">
-                <strong style={{}}>. 'M-</strong>
+                <strong style={{marginLeft:"20px"}}>  'M-</strong>
                 <strong className="main-name"> D e v e l o p e r</strong>
               </h1>
 
