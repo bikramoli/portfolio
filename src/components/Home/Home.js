@@ -24,7 +24,7 @@ function Home() {
               style={{ paddingBottom: 15, marginLeft: "10px" }}
               className="heading1"
             >
-              <span style={{ marginLeft: "10px" }}>B K R A M </span>{" "}
+              <span style={{ marginLeft: "45px" }}>B I K R A M </span>{" "}
               <span className="wave" role="img" aria-labelledby="wave">
                 O L I
               </span>
