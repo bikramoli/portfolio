@@ -48,19 +48,41 @@
   padding-top: 80px !important;
   text-align: left;
 }
+.home-main {
+  background-image: url(../Assets/coverbikram2.jpg);
+  opacity: 60%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-.home-section {
+/* .home-section {
   position: relative;
   z-index: -1;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
-}
+} */
 
 .home-content {
   padding: 9rem 0 2rem !important;
+  background-color: rgb(70, 68, 68); /* Fallback color */
+  background-color: rgba(58, 57, 57, 0.4); /* Black w/opacity/see-through */
   color: black;
+  text-align: center;
+  /* border: 3px solid #f1f1f1; */
+  color: white;
+  font-weight: bold;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
 }
 
 .heading1 {
@@ -84,7 +106,7 @@
 }
 
 .heading-name {
-  font-size: 5.5em !important;
+  font-size: 4em !important;
   padding-left: 45px !important;
   display: flex;
   flex-wrap: wrap;
