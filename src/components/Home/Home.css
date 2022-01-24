@@ -133,6 +133,10 @@
   border-left: solid black;
   box-shadow: 0 0 80px black;
 }
+.myAvtar {
+  padding-bottom: 2em !important;
+  width: 100%;
+}
 
 @media (max-width: 767px) {
   .myAvtar {
@@ -287,7 +291,7 @@
 .send-message {
   display: inline-block;
   padding: 0.3rem 0.6rem;
-  text-align: center;
+
   vertical-align: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -305,3 +309,55 @@
   font-size: 20px;
   background-color: #d0fdfd;
 }
+/* WHY US */
+.WhyUsWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.WhyUsTitle {
+  margin-top: 3em !important;
+}
+.WhyUsTitle span {
+  font-size: 3rem;
+}
+.WhyUsCollapse {
+  width: 100%;
+}
+.WhyUsWrap .ant-collapse {
+  background-color: transparent;
+  border: none;
+
+  border-radius: 6px;
+}
+
+.WhyUsCollapse .ant-collapse-header {
+  background-color: #43b8b8;
+  font-size: 1rem;
+  color: white !important;
+}
+.WhyUsCollapse .WhyUsPanel:first-of-type .ant-collapse-header {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.WhyUsPanel .ant-collapse-content-box p {
+  font-size: 1rem;
+  padding: 3em 2em;
+}
+.WhyUsGallery {
+  width: 100%;
+}
+.WhyUsGallery img {
+  padding: 0.5em;
+}
+.WhyUsGallery .ant-image-mask {
+  background: #9b6f524b;
+}
+.WhyUsGallery .ant-image-mask .ant-image-mask-info {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* WHY US */

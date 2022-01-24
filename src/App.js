@@ -1,6 +1,7 @@
 import React from "react";
 import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 import "./Style.css";
+import "antd/dist/antd.css";
 import "./App.css";
 import NavBar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";

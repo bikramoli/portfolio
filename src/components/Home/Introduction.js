@@ -5,6 +5,9 @@ import gumba from "../Assets/gumba.PNG";
 import Particles from "../Particle/Particle";
 import { useHistory } from "react-router-dom";
 
+import { Collapse } from "antd";
+import { Image } from "antd";
+
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -14,7 +17,8 @@ import { FaArrowRight, FaLinkedinIn } from "react-icons/fa";
 
 function Introduction() {
   const history = useHistory();
-
+     
+  const { Panel } = Collapse;
   return (
     
     <Container fluid className="home-about-section" id="about">
@@ -22,6 +26,12 @@ function Introduction() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
+          <Collapse
+            accordion
+            className="WhyUsCollapse"
+            defaultActiveKey={["1"]}
+          >
+            <Panel className="WhyUsPanel" header='My Introduction' key="1">
             <h1 style={{ fontSize: "2.6em" }}>
               MY <span className="purple">INTRODUCTION </span>
             </h1>
@@ -38,18 +48,39 @@ function Introduction() {
               In my spare time I like to practice Guitar, play video games, and make mods. I’m always down for hearing about new projects, so feel free to drop me some messages.
               <br/>
               <br/>
-              <button onClick={()=>history.push("/contact", {from: "Introduction"})} className="send-message" >
+              {/* <button onClick={()=>history.push("/contact", {from: "Introduction"})} className="send-message" >
+                  <FaArrowRight/> Send me message
+              </button>
+
+              <button style={{marginLeft:"1rem"}} onClick={()=>history.push("/resume",{from: "Introduction"})} className="send-message" >
+                  <FaArrowRight/> View my resume
+              </button> */}
+              
+            </p>
+            </Panel>
+            <Panel className="WhyUsPanel" header='Objectives' key="2">
+              <p>Is there anyone who doesn't love listening to stories? Right from our toddler days, we humans have this insatiable craving for tales, of the known and the unknown, that is satisfied first by our parents and then a plethora of other sources. Go through a host of fascinating stories from KidsGen, including fables and fairytales, moral stories, short stories, mythological stories, classic stories and your favourite - animal stories. If you love reading these interesting stories for kids, click here and share them with all your young friends. Have an enjoyable time!</p>
+            </Panel>
+          </Collapse>
+          <div style={{marginTop:"2rem"}}>
+          <button onClick={()=>history.push("/contact", {from: "Introduction"})} className="send-message" >
                   <FaArrowRight/> Send me message
               </button>
 
               <button style={{marginLeft:"1rem"}} onClick={()=>history.push("/resume",{from: "Introduction"})} className="send-message" >
                   <FaArrowRight/> View my resume
               </button>
-              
-            </p>
+          </div>    
           </Col>
           <Col md={4} className="myAvtar">
-            <img src={gumba} alt="Profile"className="avatar"></img>
+          <div className="WhyUsGallery">
+            <Image.PreviewGroup>
+              <Image width={"100%"} src={gumba} />
+              <Image width={"33%"} src={gumba} />
+              <Image width={"33%"} src={gumba} />
+              <Image width={"33%"} src={gumba} />
+            </Image.PreviewGroup>
+          </div>
           </Col>
         </Row>
         <Row>
