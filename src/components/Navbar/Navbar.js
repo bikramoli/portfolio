@@ -4,9 +4,15 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import signature from "../Assets/signature.png";
 
-
-import { FaArtstation, FaBlog, FaHome, FaMailBulk, FaProjectDiagram } from "react-icons/fa";
+import {
+  FaArtstation,
+  FaBlog,
+  FaHome,
+  FaMailBulk,
+  FaProjectDiagram,
+} from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -21,7 +27,6 @@ function NavBar() {
   }
   window.addEventListener("scroll", scrollHandler);
 
-
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -33,8 +38,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand as={Link} to="/" onClick={() => updateExpanded(false)}>
-         
-          <h3>Bikram.</h3>
+          <img className="signature" src={signature} alt="signature" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -70,10 +74,7 @@ function NavBar() {
                 to="/projects"
                 onClick={() => updateExpanded(false)}
               >
-                <FaProjectDiagram
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <FaProjectDiagram style={{ marginBottom: "2px" }} /> Projects
               </Nav.Link>
             </Nav.Item>
 
@@ -89,7 +90,6 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                
                 href="https://digit-infosys.vercel.app/"
                 onClick={() => updateExpanded(false)}
               >
@@ -106,7 +106,6 @@ function NavBar() {
                 <FaMailBulk style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
-            
           </Nav>
         </Navbar.Collapse>
       </Container>

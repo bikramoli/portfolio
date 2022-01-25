@@ -79,8 +79,12 @@
   }
 }
 .navbar-brand {
-  color: #00ffff !important;
-  text-shadow: 0 0 2px black;
+}
+.signature {
+  height: 60px;
+}
+.nav {
+  text-align: end;
 }
 
 .logo {

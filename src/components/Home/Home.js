@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import Introduction from "./Introduction";
@@ -13,6 +14,7 @@ import { Image } from "antd";
 import "./Home.css";
 
 function Home() {
+  const history = useHistory();
   const { Panel } = Collapse;
   return (
     <section>
@@ -55,14 +57,14 @@ function Home() {
         </Row>
       </Container>
 
-      <Container>
+      <div>
         {/* particle bg */}
-        <Col style={{ paddingBottom: 20 }}>
+        <Col style={{ paddingBottom: 10 }}>
           <Particles />
         </Col>
         <Services />
         <Introduction />
-      </Container>
+      </div>
     </section>
   );
 }
