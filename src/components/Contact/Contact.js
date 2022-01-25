@@ -115,7 +115,8 @@ function Contact() {
                         <span>
                           <a
                             style={{ color: "red", fontFamily: "monospace" }}
-                            href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmmDJbzmKnfSgqtVdTCfRVBrhrdmCCPZqDGtxpjxSNNnKCBRVGrsVKTjkJcJRwpDmVpWXw"
+                            href='mailto: "bikramoli75@gmail.com"
+                            '
                           >
                             bikramoli75@gmail.com.
                           </a>

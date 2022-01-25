@@ -16,7 +16,7 @@ const Footer = () => {
         <a
           className=""
           rel="noopener"
-          href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmmDJbzmKnfSgqtVdTCfRVBrhrdmCCPZqDGtxpjxSNNnKCBRVGrsVKTjkJcJRwpDmVpWXw"
+          href='mailto:"bikramoli75@gmail.com"'
           aria-label="My gmial"
         >
           "bikramoli75@gmail.com",
@@ -26,8 +26,8 @@ const Footer = () => {
         <a
           className=""
           rel="noopener"
-          href="https://github.com/"
-          aria-label="My GitHub"
+          href='mailto:"bikramoli75@gmail.com"'
+          aria-label="My gmail"
         >
           B I K R A M O L I
         </a>{" "}
