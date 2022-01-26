@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useHistory } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
@@ -9,6 +9,13 @@ import "./Home.css";
 
 function Home() {
   const history = useHistory();
+  const introductionRef = useRef();
+
+  // scroll to the introduction element with scrollIntoView()
+  function handleMoreAboutMe(e) {
+    e.preventDefault();
+    introductionRef.current.scrollIntoView();
+  }
   return (
     <section>
       <div className="home-main"></div>
@@ -46,10 +53,7 @@ function Home() {
                 }}
               />
               <br />
-              <button
-                onClick={() => history.push("/skills", { from: "Home" })}
-                className="connect-with-me"
-              >
+              <button onClick={handleMoreAboutMe} className="connect-with-me">
                 More About Me
               </button>
               <button
@@ -69,7 +73,9 @@ function Home() {
           <Particles />
         </Col>
         <Services />
-        <Introduction />
+        <div ref={introductionRef}>
+          <Introduction />
+        </div>
       </div>
     </section>
   );
