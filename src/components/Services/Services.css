@@ -20,5 +20,6 @@ h2 {
   }
 }
 .des {
-  border-bottom: 1px solid rgb(209, 205, 205);
+  border: 1px solid rgb(209, 205, 205);
+  text-align: center;
 }
