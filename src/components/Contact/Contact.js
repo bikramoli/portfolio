@@ -5,10 +5,10 @@ import "./Contact.css";
 function Contact() {
   return (
     <section
-      className="paralax-mf footer-paralax bg-image sect-mt4 route"
+      className="paralax-mf footer-paralax bg-image sect-mt1 route"
       // style={{ backgroundImage: "url(" + imageOverlay + ")" }}
     >
-      <div className="overlay-mf"></div>
+      {/* <div className="overlay-mf"></div> */}
       <div className="container">
         <div className="row">
           <div className="col-sm-12">
@@ -167,15 +167,6 @@ function Contact() {
           </div>
         </div>
       </div>
-      <footer>
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12">
-              <div className="copyright-box"></div>
-            </div>
-          </div>
-        </div>
-      </footer>
     </section>
   );
 }

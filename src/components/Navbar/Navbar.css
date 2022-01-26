@@ -83,19 +83,21 @@
 .signature {
   height: 60px;
 }
-.nav {
-  text-align: end;
-}
 
 .logo {
   height: 1.4em !important;
   width: 2.5em !important;
 }
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-left: 7rem;
+}
 
 .navbar-nav .nav-link {
   color: black !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  padding-right: 0.5rem !important;
+  padding-left: 0.5rem !important;
 }
 
 .nav-link {
