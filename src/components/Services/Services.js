@@ -1,14 +1,11 @@
 import React from "react";
 import {
-  FaCheck,
   FaClipboardCheck,
   FaCode,
   FaLaptopCode,
   FaMobile,
-  FaPage4,
   FaPencilRuler,
   FaPhotoVideo,
-  FaStar,
 } from "react-icons/fa";
 import "./Services.css";
 

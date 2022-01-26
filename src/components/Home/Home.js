@@ -5,17 +5,10 @@ import Typewriter from "typewriter-effect";
 import Introduction from "./Introduction";
 import Particles from "../Particle/Particle";
 import Services from "../Services/Services";
-
-import { Divider, Collapse } from "antd";
-import { Image } from "antd";
-
-// import gumba from "../Assets/gumba.PNG";
-
 import "./Home.css";
 
 function Home() {
   const history = useHistory();
-  const { Panel } = Collapse;
   return (
     <section>
       <div className="home-main"></div>
@@ -52,6 +45,19 @@ function Home() {
                   deleteSpeed: 50,
                 }}
               />
+              <br />
+              <button
+                onClick={() => history.push("/skills", { from: "Home" })}
+                className="connect-with-me"
+              >
+                More About Me
+              </button>
+              <button
+                onClick={() => history.push("/contact", { from: "Home" })}
+                className="connect-with-me"
+              >
+                Connect With Me
+              </button>
             </div>
           </Col>
         </Row>

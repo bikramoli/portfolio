@@ -108,6 +108,23 @@
   position: absolute;
   text-decoration: overline;
 }
+.connect-with-me {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+  transition: all 500ms ease;
+  cursor: pointer;
+  background-color: rgb(37, 3, 3);
+  color: white;
+  margin: 0.3rem;
+}
 
 .heading-name {
   font-size: 4em !important;
