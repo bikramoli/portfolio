@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.40eb9a0b.css",
-    "main.js": "/portfolio/static/js/main.1f169d7b.js",
+    "main.css": "/portfolio/static/css/main.91b2f255.css",
+    "main.js": "/portfolio/static/js/main.7fffad6c.js",
     "static/js/787.69d52779.chunk.js": "/portfolio/static/js/787.69d52779.chunk.js",
     "static/media/gumba.PNG": "/portfolio/static/media/gumba.512b3704531b34d8ad2c.PNG",
     "static/media/coverbikramA.jpg": "/portfolio/static/media/coverbikramA.d044076c2ce53f74aa09.jpg",
     "static/media/CV.pdf": "/portfolio/static/media/CV.9a2d50dc589cbda288c7.pdf",
     "static/media/signature.png": "/portfolio/static/media/signature.00e8e36278d79217a084.png",
     "index.html": "/portfolio/index.html",
-    "main.40eb9a0b.css.map": "/portfolio/static/css/main.40eb9a0b.css.map",
-    "main.1f169d7b.js.map": "/portfolio/static/js/main.1f169d7b.js.map",
+    "main.91b2f255.css.map": "/portfolio/static/css/main.91b2f255.css.map",
+    "main.7fffad6c.js.map": "/portfolio/static/js/main.7fffad6c.js.map",
     "787.69d52779.chunk.js.map": "/portfolio/static/js/787.69d52779.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40eb9a0b.css",
-    "static/js/main.1f169d7b.js"
+    "static/css/main.91b2f255.css",
+    "static/js/main.7fffad6c.js"
   ]
 }
