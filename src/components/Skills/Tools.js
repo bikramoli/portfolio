@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiLinux,
@@ -30,4 +30,4 @@ function Tools() {
   );
 }
 
-export default Tools;
+export default memo(Tools);

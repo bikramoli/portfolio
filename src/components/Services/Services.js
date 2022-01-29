@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   FaClipboardCheck,
   FaCode,
@@ -96,4 +96,4 @@ function Services() {
     </div>
   );
 }
-export default Services;
+export default memo(Services);

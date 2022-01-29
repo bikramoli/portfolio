@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, memo } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 // import pdf from "../../Assets/Bikramoli_resume.pdf";
@@ -10,7 +10,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 const resumeLink =
   "https://raw.githubusercontent.com/bikramoli/Resume/master/New_cv.pdf"; //This work
-//https://github.com/bikramoli/Resume/blob/master/CURRICULUM%20VITAE.pdf => doesnot work 
+//https://github.com/bikramoli/Resume/blob/master/CURRICULUM%20VITAE.pdf => doesnot work
 
 function Resume() {
   const [width, setWidth] = useState(1200);
@@ -22,7 +22,6 @@ function Resume() {
   return (
     <div>
       <Container fluid className="resume-section">
-      
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary" href={pdf} target="_blank">
             <AiOutlineDownload />
@@ -47,4 +46,4 @@ function Resume() {
   );
 }
 
-export default Resume;
+export default memo(Resume);

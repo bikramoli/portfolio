@@ -125,6 +125,12 @@
   color: white;
   margin: 0.3rem;
 }
+@media (max-width: 400px) {
+  .connect-with-me {
+    font-size: 0.7rem;
+    margin: 0.1rem;
+  }
+}
 
 .heading-name {
   font-size: 4em !important;
@@ -139,9 +145,15 @@
   /* text-shadow: 0 0 2px #87209e; */
 }
 
+@media only screen and (max-width: 1300px) {
+  .home-main {
+    margin-right: 2rem;
+    margin-left: 30rem;
+  }
+}
 @media only screen and (max-width: 996px) {
   .main-name {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
   .home-main {
     margin-right: 2rem;
@@ -150,9 +162,19 @@
 }
 @media only screen and (max-width: 566px) {
   .main-name {
-    font-size: 0.4em;
+    font-size: 0.9em;
+  }
+  .heading-name {
+    font-size: 0.6em;
+  }
+  .purple {
+    font-size: 0.7em;
+  }
+  .WhyUsCollapse {
+    font-size: 0.7em;
   }
   .home-main {
+    opacity: 40%;
     margin-right: 0rem;
     margin-left: 0rem;
   }

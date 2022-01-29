@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Container from "react-bootstrap/Container";
 import { FaReact } from "react-icons/fa";
 import "./Footer.css";
@@ -43,4 +43,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default memo(Footer);

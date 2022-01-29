@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import gumba from "../Assets/gumba.PNG";
@@ -31,9 +31,9 @@ function Introduction() {
               defaultActiveKey={["1"]}
             >
               <Panel className="WhyUsPanel" header="My Introduction" key="1">
-                <h1 style={{ fontSize: "2.6em" }}>
+                {/* <h1 style={{ fontSize: "2.6em" }}>
                   MY <span className="purple">INTRODUCTION </span>
-                </h1>
+                </h1> */}
                 <p className="home-about-body">
                   I’m Bikram, but people call me “Biky.” I’m a Frontend
                   developer, and I am specialize in efficient{" "}
@@ -171,4 +171,4 @@ function Introduction() {
     </Container>
   );
 }
-export default Introduction;
+export default memo(Introduction);

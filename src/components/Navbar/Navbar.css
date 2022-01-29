@@ -78,10 +78,14 @@
     display: none !important;
   }
 }
-.navbar-brand {
-}
+
 .signature {
   height: 60px;
+}
+@media (max-width: 400px) {
+  .signature {
+    height: 30px;
+  }
 }
 
 .logo {
