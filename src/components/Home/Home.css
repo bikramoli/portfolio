@@ -43,37 +43,14 @@
   width: 100%;
   height: 100%;
 }
-
-.home-header {
-  padding-top: 80px !important;
-  text-align: left;
-}
 .home-main {
-  background-image: url(../Assets/coverbikramA.jpg);
-  /* opacity: 60%; */
-  height: 80vh;
-  margin-top: 4rem;
-  margin-left: 40rem;
-  margin-right: 15rem;
-  align-items: center;
+  background-image: url(../Assets/coverbikram2.jpg);
+  height: 103vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
-
-/* .home-section {
-  position: relative;
-  z-index: -1;
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-} */
-
 .home-content {
   padding: 1rem 0 2rem !important;
-  background-color: rgb(70, 68, 68); /* Fallback color */
-  background-color: rgba(58, 57, 57, 0.4); /* Black w/opacity/see-through */
   color: black;
   text-align: center;
   /* border: 1px solid #f1f1f1; */
@@ -87,6 +64,31 @@
   width: 100%;
   padding: 20px;
 }
+
+.home-header {
+  padding-top: 80px !important;
+  text-align: left;
+  background-color: rgb(50, 83, 109);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  border-top: solid green 10px;
+  border-left: solid green 10px;
+}
+.typewritter {
+  text-align: center;
+  padding-bottom: 7rem;
+  border-top: solid white;
+}
+
+/* .home-section {
+  position: relative;
+  z-index: -1;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+} */
 
 .heading1 {
   font-size: 1.8em !important;
@@ -116,7 +118,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-radius: 0.3rem;
   border: 1px solid transparent;
   transition: all 500ms ease;
@@ -146,18 +148,11 @@
 }
 
 @media only screen and (max-width: 1300px) {
-  .home-main {
-    margin-right: 2rem;
-    margin-left: 30rem;
-  }
 }
+
 @media only screen and (max-width: 996px) {
   .main-name {
     font-size: 0.9em;
-  }
-  .home-main {
-    margin-right: 2rem;
-    margin-left: 20rem;
   }
 }
 @media only screen and (max-width: 566px) {

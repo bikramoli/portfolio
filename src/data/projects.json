@@ -1,0 +1,53 @@
+{
+    "projects": [
+      {
+        "id": 0,
+        "link": "https://github.com/bikramoli/Sleepiness_Detection_System",
+        "project": "AI detect drowsy of Driver",
+        "title": "Sleepiness Detection System",
+        "dateFrom": "Feb 2021",
+        "dateTo": "March 2021",
+        "info": [
+          "Responsible for web team front-end development and design",
+          "Led in app UI/UX "
+        ],
+        "stack": ["React.js", "Gatsby", "Node.js", "MongoDB"],
+        "logoheight": 80,
+        "colourPrimary": "linear-gradient(to bottom, #f4592b, #f28d25)",
+        "colourSecondary": "linear-gradient(to bottom, #f4592b, #f28d25)"
+      },
+      {
+        "id": 1,
+        "link": "https://github.com/bikramoli/Programmer-s-quora",
+        "project": "Developer's social media",
+        "title": "Programmer's Quoras",
+        "dateFrom": "August 2020",
+        "dateTo": "Jan 2021",
+        "info": [
+          "Developing application SignUp & SignIn to authenticate user and admin",
+          "Share queries or asign queries to professional as-wel-as post it"
+        ],
+        "stack": ["React.js", "Express.js", "Node.js", "MongoDB"],
+        "logowidth": 80,
+        "colourPrimary": "linear-gradient(to bottom, #465a90, #1e3470)",
+        "colourSecondary": "linear-gradient(to bottom, #465a90, #1e3470)"
+      },
+      {
+        "id": 2,
+        "link": "https://github.com/bikramoli/BikramNextBlog",
+        "project": "Personal Vlog App",
+        "title": "Digit Infosys",
+        "dateFrom": "2021",
+        "dateTo": "Current",
+        "info": [
+          "Personal vlog app build with NextJs",
+          "Use of firebase for authentication of user"
+        ],
+        "stack": ["NextJS", "Tailwind CSS", "Design", "UI/UX"],
+        "logowidth": 80,
+        "colourPrimary": "linear-gradient(to bottom, #39b175, #0be779)",
+        "colourSecondary": "linear-gradient(to bottom, #39b175, #0be779)"
+      }
+      
+    ]
+  }

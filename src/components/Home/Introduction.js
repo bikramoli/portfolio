@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./Home.css";
 import gumba from "../Assets/gumba.PNG";
-import Particles from "../Particle/Particle";
+
 import { useHistory } from "react-router-dom";
 
 import { Collapse } from "antd";
@@ -21,7 +21,6 @@ function Introduction() {
   const { Panel } = Collapse;
   return (
     <Container fluid className="home-about-section" id="about">
-      <Particles />
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
