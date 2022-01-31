@@ -1,0 +1,14 @@
+.section_title {
+  margin: 30px auto 50px auto;
+  text-align: center;
+  width: 550px;
+  max-width: 100%;
+}
+.section_title h2 {
+  font-size: 3rem;
+  font-family: Noto Sans;
+  margin-bottom: 10px;
+}
+.section_title p {
+  color: #9597a2;
+}

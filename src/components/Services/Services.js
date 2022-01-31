@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import { Container } from "react-bootstrap";
+import SectionTitle from "../section-title/SectionTitle";
 import {
   FaClipboardCheck,
   FaCode,
@@ -13,8 +14,12 @@ import "./Services.css";
 function Services() {
   return (
     <section className="services">
+      <SectionTitle
+        title="What I do?"
+        desc="There are many variations of projects, but the majority have common Tools & Technologies."
+      />
       <Container className="py-5 service-inner">
-        <h1 className="text-uppercase text-center py-4 pt-2">What I do?</h1>
+        {/* <h1 className="text-uppercase text-center py-4 pt-2">What I do?</h1> */}
 
         <div className="container">
           <div className="row">

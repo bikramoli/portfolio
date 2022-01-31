@@ -7,12 +7,17 @@ import ProjectHomeCard from "./ProjectHomeCard";
 import projectsData from "../../data/projects.json";
 import Particles from "react-tsparticles";
 import config from "../../config";
+import SectionTitle from "../section-title/SectionTitle";
 
 const ProjectHome = () => {
   const history = useHistory();
   return (
     <section title="Project-home">
       <div className="project-home-content">
+        <SectionTitle
+          title="My Latest Project"
+          desc="There are many variations of projects, but the majority have common Tools & Technologies."
+        />
         <Particles className="particles" params={config.particles} />
         <ul className="project-home-list">
           {projectsData.projects.reverse().map((pro) => (
