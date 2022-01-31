@@ -18,7 +18,7 @@ function Home() {
   }
   return (
     <section>
-      <div className="home-main">
+      <Container className="home-main">
         <Container className="home-content">
           <Row>
             <Col md={6} className="home-header">
@@ -66,7 +66,7 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </div>
+      </Container>
 
       <div>
         {/* particle bg */}

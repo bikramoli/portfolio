@@ -5,12 +5,15 @@ import "./ProjectHome.css";
 import { useHistory } from "react-router-dom";
 import ProjectHomeCard from "./ProjectHomeCard";
 import projectsData from "../../data/projects.json";
+import Particles from "react-tsparticles";
+import config from "../../config";
 
 const ProjectHome = () => {
   const history = useHistory();
   return (
     <section title="Project-home">
       <div className="project-home-content">
+        <Particles className="particles" params={config.particles} />
         <ul className="project-home-list">
           {projectsData.projects.reverse().map((pro) => (
             <li key={`project-${pro.company}`}>

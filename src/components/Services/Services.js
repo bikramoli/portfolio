@@ -1,4 +1,5 @@
 import React, { memo } from "react";
+import { Container } from "react-bootstrap";
 import {
   FaClipboardCheck,
   FaCode,
@@ -11,8 +12,8 @@ import "./Services.css";
 
 function Services() {
   return (
-    <div className="services">
-      <div className="py-5">
+    <section className="services">
+      <Container className="py-5 service-inner">
         <h1 className="text-uppercase text-center py-4 pt-2">What I do?</h1>
 
         <div className="container">
@@ -92,8 +93,8 @@ function Services() {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </Container>
+    </section>
   );
 }
 export default memo(Services);

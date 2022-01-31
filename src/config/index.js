@@ -14,14 +14,14 @@ module.exports = {
         },
       },
       size: {
-        value: 50,
+        value: 5,
         random: true,
       },
       line_linked: {
         enable: true,
         distance: 450,
-        color: "#ffffff",
-        opacity: 0.1,
+        color: "#ababab",
+        opacity: 1,
         width: 1,
       },
       move: {
@@ -48,7 +48,7 @@ module.exports = {
           distance: 200,
           size: 17,
           duration: 1,
-          opacity: 0.8,
+          opacity: 0.2,
           speed: 2,
         },
       },

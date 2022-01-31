@@ -1,116 +1,124 @@
-import React, { useState, memo } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
-import { Link } from "react-router-dom";
+import { useRef } from "react";
 import "./Navbar.css";
-import signature from "../Assets/signature.png";
+import { Link } from "react-router-dom";
+import Signature from "../Assets/signature.png";
+import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
-import {
-  FaArtstation,
-  FaBlog,
-  FaHome,
-  FaMailBulk,
-  FaProjectDiagram,
-} from "react-icons/fa";
+const Nav = () => {
+  const burgerMenuRef = useRef();
+  const listNavRef = useRef();
+  const navRef = useRef();
 
-function NavBar() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
+  function ToggleNav() {
+    const burgerMenu = burgerMenuRef.current;
+    const listNav = listNavRef.current;
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
+    listNav.classList.toggle("nav-active");
+    burgerMenu.classList.toggle("toggle");
   }
-  window.addEventListener("scroll", scrollHandler);
 
-  window.addEventListener("scroll", scrollHandler);
+  window.addEventListener("scroll", () => {
+    const nav = navRef.current;
+    nav.classList.toggle("stickyNav", window.scrollY > 0);
+  });
 
   return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
-    >
-      <Container>
-        <Navbar.Brand as={Link} to="/" onClick={() => updateExpanded(false)}>
-          <img className="signature" src={signature} alt="signature" />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
+    <nav ref={navRef}>
+      <div className="nav_left_content nav_content_container">
+        <div className="nav_logo_container nav_container_item">
+          <img src={Signature} alt="Main Logo" />
+        </div>
+
+        <ul
+          className="nav_links nav_text_links nav_container_item"
+          ref={listNavRef}
         >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav" className="nav-links">
-          <Nav className="nav" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <FaHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
+          <li>
+            <Link style={{ textDecoration: "none" }} to="/">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link style={{ textDecoration: "none" }} to="/skills">
+              skills
+            </Link>
+          </li>
+          <li>
+            <Link style={{ textDecoration: "none" }} to="/projects">
+              Projects
+            </Link>
+          </li>
+          <li>
+            {" "}
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://digit-infosys.vercel.app/"
+            >
+              Blog
+            </a>
+          </li>
+          <li>
+            <Link style={{ textDecoration: "none" }} to="/contact">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/skills"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaArtstation style={{ marginBottom: "2px" }} /> Skills
-              </Nav.Link>
-            </Nav.Item>
+      <div className="nav_right_content nav_content_container">
+        <ul className="social_links nav_container_item nav_links">
+          <li>
+            <a
+              href="https://www.facebook.com//"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTwitter />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </li>
+        </ul>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/projects"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaProjectDiagram style={{ marginBottom: "2px" }} /> Projects
-              </Nav.Link>
-            </Nav.Item>
+        <div className="contact_button nav_container_item">
+          <a target="_blank" href="https://www.facebook.com/">
+            <button>Let's Talk</button>
+          </a>
+        </div>
+      </div>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaFile style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item> */}
-
-            <Nav.Item>
-              <Nav.Link
-                href="https://digit-infosys.vercel.app/"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaBlog style={{ marginBottom: "2px" }} /> Blog
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => updateExpanded(false)}
-              >
-                <FaMailBulk style={{ marginBottom: "2px" }} /> Contact
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      <div className="bars" ref={burgerMenuRef} onClick={ToggleNav}>
+        <div className="line1 line"></div>
+        <div className="line2 line"></div>
+        <div className="line3 line"></div>
+      </div>
+    </nav>
   );
-}
+};
 
-export default memo(NavBar);
+export default Nav;
