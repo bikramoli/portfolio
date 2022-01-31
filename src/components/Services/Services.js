@@ -17,6 +17,7 @@ function Services() {
       <SectionTitle
         title="What I do?"
         desc="There are many variations of projects, but the majority have common Tools & Technologies."
+        color="white"
       />
       <Container className="py-5 service-inner">
         {/* <h1 className="text-uppercase text-center py-4 pt-2">What I do?</h1> */}

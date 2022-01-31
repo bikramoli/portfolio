@@ -6,8 +6,9 @@
 }
 .section_title h2 {
   font-size: 3rem;
-  font-family: Noto Sans;
+  /* font-family: Noto Sans; */
   margin-bottom: 10px;
+  font-family: cursive;
 }
 .section_title p {
   color: #9597a2;

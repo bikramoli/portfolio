@@ -1,0 +1,15 @@
+h1,
+h2,
+a {
+  user-select: none;
+}
+
+h1 {
+  font-family: Noto Sans;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}

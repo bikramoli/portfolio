@@ -1,9 +1,9 @@
 import "./SectionTitle.css";
 
-const SectionTitle = ({ title, desc }) => {
+const SectionTitle = ({ title, desc, color }) => {
   return (
     <div className="section_title">
-      <h2>{title}</h2>
+      <h2 style={{ color: `${color}` }}>{title}</h2>
       <p>{desc}</p>
     </div>
   );
