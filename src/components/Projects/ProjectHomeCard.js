@@ -3,7 +3,8 @@ import gumba from "../Assets/gumba.PNG";
 import "./ProjectHomeCard.css";
 
 const ProjectHomeCard = ({ projects }) => {
-  let { link, project, title, dateFrom, dateTo, info, stack, image } = projects;
+  let { link, project, title, dateFrom, dateTo, info, stack, image, color } =
+    projects;
   return (
     <a
       className="project-home-link"
@@ -16,9 +17,16 @@ const ProjectHomeCard = ({ projects }) => {
           <div className="project-home-card-top">
             <div
               className="project-home-bg"
-              // style={{ background: projects.colourPrimary }}
+              // style={{ border: `solid ${projects.colourPrimary}` }}
             >
-              <img style={{ height: "100%", width: "100%" }} src={image}></img>
+              <img
+                style={{
+                  border: color,
+                  borderWidth: "5px",
+                  borderStyle: "solid",
+                }}
+                src={image}
+              ></img>
             </div>
             <h2>{project}</h2>
             <div className="image-wrapper">

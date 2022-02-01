@@ -22,10 +22,7 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={12} className="home-header">
-              <h1
-                style={{ paddingBottom: 15, marginLeft: "10px" }}
-                className="heading1"
-              >
+              <h1 className="heading1">
                 <span>B I K R A M </span>{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   O L I
@@ -34,8 +31,8 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                <strong> I'M-</strong>
-                <strong className="main-name"> D e v e l o p e r</strong>
+                <strong style={{ marginRight: "20px" }}> I'm</strong>
+                <strong className="main-name"> D E V E L O P E R</strong>
               </h1>
 
               <div className="typewritter">
@@ -58,13 +55,13 @@ function Home() {
           </Row>
           <div className="home-button">
             <button onClick={handleMoreAboutMe} className="connect-with-me">
-              More About Me
+              MORE ABOUT ME
             </button>
             <button
               onClick={() => history.push("/contact", { from: "Home" })}
               className="connect-with-me"
             >
-              Connect With Me
+              CONNECT WITH ME
             </button>
           </div>
         </Container>
