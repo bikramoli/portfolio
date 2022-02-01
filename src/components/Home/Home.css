@@ -62,7 +62,7 @@ body {
 }
 .home-main {
   background-image: url(../Assets/cover.jpg);
-  height: 98vh;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1500px;
@@ -71,28 +71,21 @@ body {
   padding: 1rem 0 2rem !important;
   color: black;
   text-align: center;
-  /* border: 1px solid #f1f1f1; */
   color: white;
   font-weight: bold;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 100%;
   padding: 20px;
-  display: none;
+  height: 80vh;
+  margin-top: 2rem;
 }
 
 .home-header {
-  padding-top: 80px !important;
-  text-align: left;
-  background-color: rgb(50, 83, 109);
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-top-right-radius: 50%;
-  border-top: solid green 10px;
-  border-left: solid green 10px;
+  /* text-align: left; */
 }
 .typewritter {
   text-align: center;
@@ -129,6 +122,11 @@ body {
   position: absolute;
   text-decoration: overline;
 }
+.home-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
 .connect-with-me {
   display: inline-block;
   padding: 0.3rem 0.6rem;
@@ -137,28 +135,29 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 1rem;
+  font-size: 0.6rem;
   border-radius: 0.3rem;
   border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
-  background-color: rgb(37, 3, 3);
-  color: white;
+  background-color: white;
+  border: ridge;
+  color: black;
   margin: 0.3rem;
+  margin-top: 18rem;
+  text-align: left;
 }
-@media (max-width: 400px) {
-  .connect-with-me {
-    font-size: 0.7rem;
-    margin: 0.1rem;
-  }
+.connect-with-me:hover {
+  background-color: red;
 }
 
 .heading-name {
   font-size: 4em !important;
-  padding-left: 45px !important;
   display: flex;
   flex-wrap: wrap;
+
   color: white;
+  justify-content: center;
 }
 .main-name {
   color: #00ffff;
@@ -189,8 +188,11 @@ body {
   }
   .home-main {
     opacity: 40%;
-    margin-right: 0rem;
-    margin-left: 0rem;
+  }
+}
+@media (max-width: 365px) {
+  .main-name {
+    font-size: 0.7em;
   }
 }
 .Typewriter__wrapper {

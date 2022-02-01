@@ -17,7 +17,8 @@ const ProjectHome = () => {
         <SectionTitle
           title="My Latest Project"
           desc="There are many variations of projects, but the majority have common Tools & Technologies."
-          color="black"
+          headingColor="white"
+          contentColor="white"
         />
         <Particles className="particles" params={config.particles} />
         <ul className="project-home-list">
@@ -40,7 +41,7 @@ const ProjectHome = () => {
               More Projects{" "}
               <button
                 onClick={() => history.push("/contact", { from: "Home" })}
-                className="connect-with-me"
+                className="connect-with-m"
               >
                 ... Projects
               </button>
