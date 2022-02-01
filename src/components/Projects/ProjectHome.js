@@ -18,7 +18,7 @@ const ProjectHome = () => {
           headingColor="white"
           contentColor="white"
         />
-        {/* <Particles className="particles" params={config.particles} /> */}
+        <Particles className="particles" params={config.particles} />
         <ul className="project-home-list">
           {projectsData.projects.reverse().map((pro) => (
             <li key={`project-${pro.company}`}>

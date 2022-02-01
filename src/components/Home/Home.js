@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import Introduction from "./Introduction";
 import Services from "../Services/Services";
 import ProjectHome from "../Projects/ProjectHome";
+import Statistic from "../staistics/Statistics";
 import "./Home.css";
 
 function Home() {
@@ -70,6 +71,7 @@ function Home() {
       <div>
         <Services />
         <ProjectHome />
+        <Statistic />
         <div ref={introductionRef}>
           <Introduction />
         </div>

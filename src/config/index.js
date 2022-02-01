@@ -8,7 +8,7 @@ module.exports = {
         random: false,
         anim: {
           enable: true,
-          speed: 0.2,
+          speed: 0.7,
           opacity_min: 0.3,
           sync: true,
         },
