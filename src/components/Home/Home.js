@@ -18,7 +18,7 @@ function Home() {
   }
   return (
     <section>
-      <Container className="home-main">
+      <div className="home-main">
         <Container className="home-content">
           <Row>
             <Col md={6} className="home-header">
@@ -66,11 +66,9 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </Container>
+      </div>
 
       <div>
-        {/* particle bg */}
-        <Col style={{ paddingBottom: 10 }}></Col>
         <Services />
         <ProjectHome />
         <div ref={introductionRef}>
