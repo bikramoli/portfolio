@@ -1,8 +1,21 @@
-.services {
-  padding-bottom: 2rem;
+.statistic {
+  color: red;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  text-align: center;
+}
+img.background {
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 90%;
+  opacity: 20%;
 }
 
-.services h1,
+.statistics h1,
 h2 {
   color: var(--blue);
 }
@@ -12,6 +25,9 @@ h2 {
 .break {
   visibility: hidden;
 }
+.value {
+  font-size: 4rem;
+}
 @media only screen and (max-width: 568px) {
   .break {
     background: #fff;
@@ -19,6 +35,20 @@ h2 {
     visibility: visible;
   }
 }
+
 .statistic {
+  color: red;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
   text-align: center;
+}
+img.background {
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 90%;
+  opacity: 20%;
 }
