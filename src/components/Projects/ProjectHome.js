@@ -1,7 +1,5 @@
 import React from "react";
 import "./ProjectHome.css";
-// import { Fade } from "react-reveal";
-// import Section from "../section/Section";
 import { useHistory } from "react-router-dom";
 import ProjectHomeCard from "./ProjectHomeCard";
 import projectsData from "../../data/projects.json";
@@ -20,7 +18,7 @@ const ProjectHome = () => {
           headingColor="white"
           contentColor="white"
         />
-        <Particles className="particles" params={config.particles} />
+        {/* <Particles className="particles" params={config.particles} /> */}
         <ul className="project-home-list">
           {projectsData.projects.reverse().map((pro) => (
             <li key={`project-${pro.company}`}>
@@ -38,12 +36,12 @@ const ProjectHome = () => {
             }}
           >
             <p style={{ textAlign: "center" }}>
-              More Projects{" "}
+              {/* More Projects{" "} */}
               <button
-                onClick={() => history.push("/contact", { from: "Home" })}
-                className="connect-with-m"
+                onClick={() => history.push("/projects", { from: "Home" })}
+                className="more-project"
               >
-                ... Projects
+                More Projects ...
               </button>
               .
             </p>

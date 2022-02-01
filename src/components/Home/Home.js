@@ -53,23 +53,20 @@ function Home() {
                   }}
                 />
                 <br />
-                <div className="home-button">
-                  <button
-                    onClick={handleMoreAboutMe}
-                    className="connect-with-me"
-                  >
-                    More About Me
-                  </button>
-                  <button
-                    onClick={() => history.push("/contact", { from: "Home" })}
-                    className="connect-with-me"
-                  >
-                    Connect With Me
-                  </button>
-                </div>
               </div>
             </Col>
           </Row>
+          <div className="home-button">
+            <button onClick={handleMoreAboutMe} className="connect-with-me">
+              More About Me
+            </button>
+            <button
+              onClick={() => history.push("/contact", { from: "Home" })}
+              className="connect-with-me"
+            >
+              Connect With Me
+            </button>
+          </div>
         </Container>
       </div>
 

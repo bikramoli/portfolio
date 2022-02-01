@@ -14,7 +14,8 @@
         "stack": ["React.js", "Gatsby", "Node.js", "MongoDB"],
         "logoheight": 80,
         "colourPrimary": "linear-gradient(to bottom, #f4592b, #f28d25)",
-        "colourSecondary": "linear-gradient(to bottom, #f4592b, #f28d25)"
+        "colourSecondary": "linear-gradient(to bottom, #f4592b, #f28d25)",
+        "image":"https://lincolnwoodlibrary.org/wp-content/uploads/2019/09/apemanlc350.png"
       },
       {
         "id": 1,
@@ -30,7 +31,8 @@
         "stack": ["React.js", "Express.js", "Node.js", "MongoDB"],
         "logowidth": 80,
         "colourPrimary": "linear-gradient(to bottom, #465a90, #1e3470)",
-        "colourSecondary": "linear-gradient(to bottom, #465a90, #1e3470)"
+        "colourSecondary": "linear-gradient(to bottom, #465a90, #1e3470)",
+        "image":"https://lincolnwoodlibrary.org/wp-content/uploads/2019/09/apemanlc350.png"
       },
       {
         "id": 2,
@@ -46,7 +48,8 @@
         "stack": ["NextJS", "Tailwind CSS", "Design", "UI/UX"],
         "logowidth": 80,
         "colourPrimary": "linear-gradient(to bottom, #39b175, #0be779)",
-        "colourSecondary": "linear-gradient(to bottom, #39b175, #0be779)"
+        "colourSecondary": "linear-gradient(to bottom, #39b175, #0be779)",
+        "image":"https://lincolnwoodlibrary.org/wp-content/uploads/2019/09/apemanlc350.png"
       }
       
     ]

@@ -37,3 +37,13 @@
   height: calc(100vh);
   width: 100%;
 }
+.more-project {
+  width: 200px;
+  height: 50px;
+  border-radius: 0.3rem;
+  margin: 2rem;
+  font-size: 1.4em;
+}
+.more-project:hover {
+  background-color: red;
+}
