@@ -58,7 +58,28 @@ function Statistics() {
                   style={{ height: "150px" }}
                   src="https://www.phincon.com/wp-content/uploads/2016/05/implement_iconbig.png"
                 />
-                <h1 className="mb-4 value">1</h1>
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <div>
+                      {isVisible ? (
+                        <CountUp
+                          className="mb-4 value"
+                          start={0}
+                          end={1}
+                          duration={1}
+                        ></CountUp>
+                      ) : (
+                        <CountUp
+                          className="mb-4 value"
+                          start={0}
+                          end={1}
+                          duration={2}
+                        ></CountUp>
+                      )}
+                    </div>
+                  )}
+                </VisibilitySensor>
+
                 <h3 className="pt-2 pb-2">Under construction projects</h3>
 
                 <hr className="break" />
@@ -68,7 +89,28 @@ function Statistics() {
                   style={{ height: "150px" }}
                   src="https://greatriversgreenway.org/wp-content/uploads/2019/07/planning-icon.png"
                 />
-                <h1 className="mb-4 value">4</h1>
+                <VisibilitySensor>
+                  {({ isVisible }) => (
+                    <div>
+                      {isVisible ? (
+                        <CountUp
+                          className="mb-4 value"
+                          start={0}
+                          end={5}
+                          duration={1}
+                        ></CountUp>
+                      ) : (
+                        <CountUp
+                          className="mb-4 value"
+                          start={0}
+                          end={5}
+                          duration={2}
+                        ></CountUp>
+                      )}
+                    </div>
+                  )}
+                </VisibilitySensor>
+
                 <h3 className="pt-2 pb-2">Planned projects</h3>
               </div>
             </div>
