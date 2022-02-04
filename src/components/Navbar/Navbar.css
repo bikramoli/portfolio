@@ -10,7 +10,7 @@
 
 nav {
   position: fixed;
-  padding-top: 0.5em;
+  padding: 10px 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,9 +32,10 @@ nav {
   flex-direction: stretch;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  background-color: white;
 }
 .stickyNav {
-  background: white;
+  border-bottom: solid blue;
   padding: 10px 0;
 }
 
@@ -61,7 +62,7 @@ nav .nav_content_container .nav_container_item {
 }
 
 nav .nav_content_container .nav_logo_container {
-  width: 70px;
+  width: 40px;
 }
 
 nav .nav_content_container .nav_logo_container img {

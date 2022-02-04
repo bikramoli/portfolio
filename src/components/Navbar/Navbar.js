@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import Signature from "../Assets/signature.png";
+import logoNav from "../Assets/logoNav.PNG";
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Nav = () => {
@@ -26,7 +26,7 @@ const Nav = () => {
     <nav ref={navRef}>
       <div className="nav_left_content nav_content_container">
         <div className="nav_logo_container nav_container_item">
-          <img src={Signature} alt="Main Logo" />
+          <img src={logoNav} alt="Main Logo" />
         </div>
 
         <ul

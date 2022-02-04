@@ -20,40 +20,49 @@ function Home() {
   return (
     <section>
       <div className="home-main">
-        <Container className="home-content">
-          <Row>
-            <Col md={12} className="home-header">
-              <h1 className="heading1">
-                <span>B I K R A M </span>{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  O L I
-                </span>
-                <div className="line"></div>
-              </h1>
+        <div className="home-content">
+          <Col className="home-header">
+            <h1 className="heading1">
+              <span>B I K R A M </span>{" "}
+              <span className="wave" role="img" aria-labelledby="wave">
+                O L I
+              </span>
+              <div className="line"></div>
+            </h1>
 
-              <h1 className="heading-name">
-                <strong style={{ marginRight: "20px" }}> I'm</strong>
-                <strong className="main-name"> D E V E L O P E R</strong>
-              </h1>
+            <h1 className="heading-name">
+              <strong
+                style={{
+                  marginRight: "20px",
+                  paddingLeft: "1rem",
+                  background: "black",
+                }}
+              >
+                {" "}
+                I'm
+              </strong>
+              <strong className="main-name"> D E V E L O P E R</strong>
+            </h1>
 
-              <div className="typewritter">
-                <Typewriter
-                  options={{
-                    strings: [
-                      "Web Designer",
-                      "Frontend Developer",
-                      "MERN Stack Developer",
-                      "Open Source Contributor",
-                    ],
-                    autoStart: true,
-                    loop: true,
-                    deleteSpeed: 50,
-                  }}
-                />
-                <br />
-              </div>
-            </Col>
-          </Row>
+            <div className="typewritter">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Web Designer",
+                    "Frontend Developer",
+                    "MERN Stack Developer",
+                    "Open Source Contributor",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 50,
+                }}
+              />
+              <br />
+            </div>
+          </Col>
+        </div>
+        <Container>
           <div className="home-button">
             <button onClick={handleMoreAboutMe} className="connect-with-me">
               MORE ABOUT ME

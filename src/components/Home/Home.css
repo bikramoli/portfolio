@@ -44,8 +44,8 @@
   height: 100%;
 }
 .home-main {
-  background-image: url(../Assets/cover.jpg);
-  height: 90vh;
+  background-image: url(../Assets/cover1.jpg);
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1500px;
@@ -64,15 +64,20 @@
   z-index: 2;
   width: 100%;
   padding: 20px;
-  height: 80vh;
-  margin-top: 5rem;
+  height: 60vh;
+  margin-top: 2rem;
 }
 
 .home-header {
-  /* text-align: left; */
+  text-align: left;
+  padding-top: 9rem;
+  font-family: "Times New Roman", Times, serif;
 }
 .typewritter {
-  text-align: center;
+  text-align: left;
+  background-color: rgb(56, 54, 54);
+  width: 420px;
+  padding-left: 1rem;
 }
 
 /* .home-section {
@@ -87,7 +92,10 @@
 .heading1 {
   font-size: 1.8em !important;
   font-weight: 600 !important;
+  width: 230px;
   color: white;
+  background-color: rgb(56, 54, 54);
+  padding-left: 1rem;
 }
 /* .line {
   height: 110px;
@@ -109,7 +117,7 @@
   flex-wrap: wrap;
   justify-content: right;
   position: absolute;
-  bottom: -40px;
+  bottom: -30px;
 }
 .connect-with-me {
   display: inline-block;
@@ -130,11 +138,11 @@
   margin: 0.3rem;
   margin-top: 1rem;
   text-align: left;
-  background: #cd5c5c;
+  background: #f9004d;
+  border: solid rgb(121, 117, 117);
 }
 .connect-with-me:hover {
-  background-color: red;
-  font-size: 1rem;
+  border: solid white;
 }
 
 .heading-name {
@@ -142,10 +150,13 @@
   display: flex;
   flex-wrap: wrap;
   color: white;
-  justify-content: center;
+  justify-content: left;
+  width: 500px;
 }
 .main-name {
-  color: black;
+  color: red;
+  padding-left: 1rem;
+  background-color: black;
 
   /* text-shadow: 0 0 2px #87209e; */
 }
@@ -157,6 +168,9 @@
   .main-name {
     font-size: 0.9em;
   }
+  .heading-name {
+    width: 450px;
+  }
 }
 @media only screen and (max-width: 566px) {
   .main-name {
@@ -164,6 +178,10 @@
   }
   .heading-name {
     font-size: 0.6em;
+    width: 100%;
+  }
+  .typewritter {
+    width: 100%;
   }
   .purple {
     font-size: 0.7em;
@@ -178,7 +196,10 @@
 @media (max-width: 365px) {
   .main-name {
     font-size: 0.7em;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
   }
+
   .connect-with-me {
     font-size: 0.7rem;
   }
@@ -187,7 +208,7 @@
   font-size: 2.2em !important;
   color: black !important;
   font-weight: 600 !important;
-  color: blueviolet !important;
+  color: white !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;

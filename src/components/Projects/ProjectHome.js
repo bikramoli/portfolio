@@ -3,8 +3,8 @@ import "./ProjectHome.css";
 import { useHistory } from "react-router-dom";
 import ProjectHomeCard from "./ProjectHomeCard";
 import projectsData from "../../data/projects.json";
-import Particles from "react-tsparticles";
-import config from "../../config";
+// import Particles from "react-tsparticles";
+// import config from "../../config";
 import SectionTitle from "../section-title/SectionTitle";
 
 const ProjectHome = () => {
@@ -18,7 +18,7 @@ const ProjectHome = () => {
           headingColor="white"
           contentColor="white"
         />
-        <Particles className="particles" params={config.particles} />
+        {/* <Particles className="particles" params={config.particles} /> */}
         <ul className="project-home-list">
           {projectsData.projects.reverse().map((pro) => (
             <li key={`project-${pro.company}`}>
