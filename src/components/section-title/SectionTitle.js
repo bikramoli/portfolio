@@ -1,20 +1,32 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import "./SectionTitle.css";
 
 const SectionTitle = ({ title, desc, headingColor, contentColor }) => {
   const [value, setValue] = useState(0);
   const sectionRef = useRef();
 
-  window.addEventListener("scroll", () => {
-    const scrollValue = Math.ceil(window.scrollY * 10);
-    setValue(scrollValue);
+  const handleScroll = (event) => {
+    const { body, documentElement } = event.srcElement;
+    const sd = Math.max(body.scrollTop, documentElement.scrollTop);
+    const sp =
+      (sd / (documentElement.scrollHeight - documentElement.clientHeight)) *
+      100;
+    const maxlimit =
+      (documentElement.clientHeight * 150) / documentElement.scrollHeight;
+    if (sp >= 0 && sp <= maxlimit) {
+      setValue(sp);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
   });
 
   return (
     <div
       ref={sectionRef}
       style={{
-        transform: `translateX(${value * 5.5}%)`,
+        transform: `translateX(${value * 5.5}px)`,
         transition: "transform 1s ease-out",
       }}
       className="section_title"
