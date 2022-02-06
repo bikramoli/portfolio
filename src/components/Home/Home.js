@@ -31,16 +31,7 @@ function Home() {
             </h1>
 
             <h1 className="heading-name">
-              <strong
-                style={{
-                  marginRight: "20px",
-                  paddingLeft: "1rem",
-                  background: "black",
-                }}
-              >
-                {" "}
-                I'm
-              </strong>
+              <strong className="heading-name-first"> I'm</strong>
               <strong className="main-name"> D E V E L O P E R</strong>
             </h1>
 

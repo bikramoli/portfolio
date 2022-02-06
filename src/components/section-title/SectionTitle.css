@@ -4,7 +4,11 @@
   text-align: center;
   width: 550px;
   max-width: 100%;
+  transform: translateX(200px);
+
+  transition: transform 0.5s ease-out;
 }
+
 .section_title h2 {
   font-size: 3rem;
   /* font-family: Noto Sans; */
