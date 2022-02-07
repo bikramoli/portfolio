@@ -10,6 +10,7 @@ function Statistics() {
   return (
     <>
       <img className="background" src={coverbikram2} alt="cover" />
+
       <section className="statistics">
         <SectionTitle
           title="MY STATISTIC"

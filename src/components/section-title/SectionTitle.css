@@ -1,21 +1,26 @@
 .section_title {
-  padding-top: 3rem;
-  margin: 30px auto 50px auto;
+  height: 40vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
   text-align: center;
-  width: 550px;
-  max-width: 100%;
-  transform: translateX(200px);
-
-  transition: transform 0.5s ease-out;
+  margin-top: 2rem;
 }
 
 .section_title h2 {
-  font-size: 3rem;
-  /* font-family: Noto Sans; */
-  margin-bottom: 10px;
-  font-family: cursive;
+  font-size: 180px;
+  transition: transform 0.5s ease-out;
+  font-family: "AvenirHeavy";
+  position: absolute;
+  color: #eee;
+  top: 5%;
+  left: -15%;
+  z-index: 1;
 }
 .section_title p {
-  color: #9597a2;
-  font-size: 1.3rem;
+  font-family: "AvenirLight";
+  position: absolute;
+  font-size: 30px;
+  padding: 7rem;
+  z-index: 2;
 }
