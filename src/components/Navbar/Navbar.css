@@ -177,6 +177,11 @@ nav .bars {
   nav {
     background-color: black;
   }
+  .stickyNav {
+    border-bottom: solid blue;
+    padding: 10px 0;
+    background-color: black;
+  }
   nav .nav_content_container .nav_links li a {
     color: white;
   }

@@ -24,3 +24,58 @@
   padding: 6rem;
   z-index: 2;
 }
+@media only screen and (max-width: 996px) {
+  .section_title h2 {
+    font-size: 100px;
+    transition: transform 0.5s ease-out;
+    font-family: "AvenirHeavy";
+    position: absolute;
+    color: #eee;
+    top: 5%;
+    left: -15%;
+    z-index: 1;
+  }
+  .section_title p {
+    font-family: "AvenirLight";
+    position: absolute;
+    font-size: 20px;
+    padding: 3rem;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .section_title {
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .section_title h2 {
+    font-size: 50px;
+    transition: transform 0.5s ease-out;
+    font-family: "AvenirHeavy";
+    position: absolute;
+    color: #eee;
+    top: 5%;
+    left: -15%;
+    z-index: 1;
+  }
+  .section_title p {
+    font-family: "AvenirLight";
+    position: absolute;
+    font-size: 10px;
+    padding: 1rem;
+    z-index: 2;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .section_title p {
+    font-family: "AvenirLight";
+    position: absolute;
+    font-size: 10px;
+    padding: 1.5rem;
+    z-index: 2;
+  }
+}
