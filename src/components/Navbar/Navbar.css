@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Agustina";
+  src: url(../Assets/fonts/Agustina.woff);
+}
 * {
   margin: 0;
   padding: 0;
@@ -32,11 +36,11 @@ nav {
   flex-direction: stretch;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  background-color: white;
 }
 .stickyNav {
   border-bottom: solid blue;
   padding: 10px 0;
+  background-color: white;
 }
 
 nav .nav_content_container {
@@ -62,13 +66,20 @@ nav .nav_content_container .nav_container_item {
 }
 
 nav .nav_content_container .nav_logo_container {
-  width: 40px;
+  width: 100px;
 }
 
 nav .nav_content_container .nav_logo_container img {
   width: 100%;
 }
-
+.nav-signature {
+  font-family: Agustina;
+  font-size: 30px;
+  font-weight: bold;
+}
+.nav-signature:hover {
+  color: #8ba6bb;
+}
 nav .nav_content_container .nav_links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,6 +180,9 @@ nav .bars {
     color: white;
   }
   nav .nav_content_container .contact_button a button {
+    color: white;
+  }
+  .nav-signature {
     color: white;
   }
   nav .nav_content_container .nav_text_links {

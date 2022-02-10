@@ -1,4 +1,4 @@
-import React, { memo, useRef, useState, useEffect } from "react";
+import React, { memo, useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../section-title/SectionTitle";
 import {
@@ -29,7 +29,7 @@ function Services() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-  });
+  }, []);
   return (
     <>
       <SectionTitle

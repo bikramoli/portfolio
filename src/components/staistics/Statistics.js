@@ -15,7 +15,7 @@ function Statistics() {
         <SectionTitle
           title="MY STATISTIC"
           desc="AWSOME FACTS"
-          headingColor="black"
+          headingColor="#bfbfbf"
           contentColor="black"
         />
         <Container className="py-5 statistics-inner">

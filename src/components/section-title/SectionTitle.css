@@ -1,5 +1,5 @@
 .section_title {
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -8,7 +8,7 @@
 }
 
 .section_title h2 {
-  font-size: 180px;
+  font-size: 150px;
   transition: transform 0.5s ease-out;
   font-family: "AvenirHeavy";
   position: absolute;
@@ -21,6 +21,6 @@
   font-family: "AvenirLight";
   position: absolute;
   font-size: 30px;
-  padding: 7rem;
+  padding: 6rem;
   z-index: 2;
 }

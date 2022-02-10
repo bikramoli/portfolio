@@ -19,54 +19,50 @@ function Home() {
   }
   return (
     <section>
-      <div className="home-main">
-        <div className="home-content">
-          <Col className="home-header">
-            <h1 className="heading1">
-              <span>B I K R A M </span>{" "}
-              <span className="wave" role="img" aria-labelledby="wave">
-                O L I
-              </span>
-              <div className="line"></div>
-            </h1>
+      <Container className="home-top">
+        <h1 className="heading-first">
+          <span>B I K R A M </span>{" "}
+          <span className="wave" role="img" aria-labelledby="wave">
+            O L I
+          </span>
+          <div className="line"></div>
+        </h1>
+        <h1 className="heading-second">
+          <strong className="heading-name-first"> I'M</strong>
+          <strong className="main-name"> D E V E L O P E R</strong>
+        </h1>
+      </Container>
+      <div className="home-main"></div>
 
-            <h1 className="heading-name">
-              <strong className="heading-name-first"> I'm</strong>
-              <strong className="main-name"> D E V E L O P E R</strong>
-            </h1>
-
-            <div className="typewritter">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Web Designer",
-                    "Frontend Developer",
-                    "MERN Stack Developer",
-                    "Open Source Contributor",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                  deleteSpeed: 50,
-                }}
-              />
-              <br />
-            </div>
-          </Col>
+      <Container>
+        <div className="typewritter">
+          <Typewriter
+            options={{
+              strings: [
+                "Web Designer",
+                "Frontend Developer",
+                "MERN Stack Developer",
+                "Open Source Contributor",
+              ],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 50,
+            }}
+          />
+          <br />
         </div>
-        <Container>
-          <div className="home-button">
-            <button onClick={handleMoreAboutMe} className="connect-with-me">
-              MORE ABOUT ME
-            </button>
-            <button
-              onClick={() => history.push("/contact", { from: "Home" })}
-              className="connect-with-me"
-            >
-              CONNECT WITH ME
-            </button>
-          </div>
-        </Container>
-      </div>
+        <div className="home-button">
+          <button onClick={handleMoreAboutMe} className="connect-with-me">
+            MORE ABOUT ME
+          </button>
+          <button
+            onClick={() => history.push("/contact", { from: "Home" })}
+            className="connect-with-me"
+          >
+            CONNECT WITH ME
+          </button>
+        </div>
+      </Container>
 
       <div>
         <Services />
