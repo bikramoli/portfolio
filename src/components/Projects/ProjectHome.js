@@ -76,12 +76,17 @@ const ProjectHome = () => {
           >
             <p style={{ textAlign: "center" }}>
               {/* More Projects{" "} */}
-              <button
-                onClick={() => history.push("/projects", { from: "Home" })}
-                className="more-project"
-              >
-                More Projects ...
-              </button>
+
+              <div className="project_button">
+                <a target="_blank" href="https://www.facebook.com/">
+                  <button
+                    onClick={() => history.push("/projects", { from: "Home" })}
+                    className="more-project"
+                  >
+                    MORE PROJECTS ...
+                  </button>
+                </a>
+              </div>
             </p>
           </div>
         </div>

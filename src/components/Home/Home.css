@@ -55,24 +55,6 @@
   background-size: cover;
   position: relative;
 }
-.home-content {
-  padding: 1rem 0 2rem !important;
-  color: black;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 100%;
-  padding: 20px;
-  height: 60vh;
-  margin-top: 2rem;
-  display: none;
-  height: 100%;
-}
 
 .home-header {
   text-align: left;
@@ -113,11 +95,11 @@
   transition: all 500ms ease;
   cursor: pointer;
   background-color: white;
-  color: white;
+  color: black;
   text-align: left;
-  background: black;
   border: solid transparent;
   margin-right: 1rem;
+  border: 2px solid #9597a2;
 }
 .connect-with-me:hover {
   border: solid white;
@@ -233,7 +215,7 @@
   text-align: right;
 }
 .home-about-des-img {
-  background-color: cadetblue;
+  background-color: black;
 }
 
 .home-about-body {
@@ -245,7 +227,7 @@
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: #43b8b8 !important;
+  color: black !important;
 }
 
 .home-about-social-links {
@@ -403,7 +385,7 @@
 }
 
 .WhyUsCollapse .ant-collapse-header {
-  background-color: #43b8b8;
+  background-color: black;
   font-size: 1rem;
   color: white !important;
 }
@@ -431,10 +413,3 @@
 }
 
 /* WHY US */
-
-/* Responsive design */
-@media only screen and (min-width: 600px) {
-}
-@media only screen and (min-width: 768px) {
-}
-/* Responsive design */

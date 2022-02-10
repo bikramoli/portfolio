@@ -34,7 +34,7 @@ function Home() {
       </Container>
       <div className="home-main"></div>
 
-      <Container>
+      <Container className="home-bottom">
         <div className="typewritter">
           <Typewriter
             options={{

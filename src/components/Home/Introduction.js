@@ -23,16 +23,13 @@ function Introduction() {
     <Container fluid className="home-about-section" id="about">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col md={12} className="home-about-description">
             <Collapse
               accordion
               className="WhyUsCollapse"
               defaultActiveKey={["1"]}
             >
               <Panel className="WhyUsPanel" header="My Introduction" key="1">
-                {/* <h1 style={{ fontSize: "2.6em" }}>
-                  MY <span className="purple">INTRODUCTION </span>
-                </h1> */}
                 <p className="home-about-body">
                   I’m Bikram, but people call me “Biky.” I’m a Frontend
                   developer, and I am specialize in efficient{" "}
@@ -104,7 +101,7 @@ function Introduction() {
               </button>
             </div>
           </Col>
-          <Col md={4} className="myAvtar">
+          {/* <Col md={4} className="myAvtar">
             <div className="WhyUsGallery">
               <Image.PreviewGroup>
                 <Image width={"100%"} src={gumba} />
@@ -113,7 +110,7 @@ function Introduction() {
                 <Image width={"33%"} src={gumba} />
               </Image.PreviewGroup>
             </div>
-          </Col>
+          </Col> */}
         </Row>
 
         <Row>
