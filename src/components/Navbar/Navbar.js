@@ -26,7 +26,7 @@ const Nav = () => {
     <nav ref={navRef}>
       <div className="nav_left_content nav_content_container">
         <div className="nav_logo_container nav_container_item">
-          <h1 className="nav-signature">Bikram</h1>
+          <h1 className="nav-signature">BikramOli</h1>
         </div>
 
         <ul

@@ -66,17 +66,17 @@ nav .nav_content_container .nav_container_item {
 }
 
 nav .nav_content_container .nav_logo_container {
-  width: 100px;
+  width: 150px;
+  margin-right: 1rem;
 }
 
-nav .nav_content_container .nav_logo_container img {
-  width: 100%;
-}
 .nav-signature {
   font-family: Agustina;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(54, 133, 235);
+  color: black;
+  margin-top: 1rem;
+  text-shadow: 2px 2px 8px rgb(54, 133, 235);
 }
 .nav-signature:hover {
   color: #8ba6bb;
