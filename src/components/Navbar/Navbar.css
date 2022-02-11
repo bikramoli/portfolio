@@ -273,4 +273,12 @@ nav .bars {
   nav .nav_content_container .nav_logo_container {
     width: 50px;
   }
+  .nav-signature {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .nav-signature {
+    font-size: 15px;
+  }
 }

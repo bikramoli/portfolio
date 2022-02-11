@@ -67,16 +67,9 @@ function Introduction() {
               </Panel>
               <Panel className="WhyUsPanel" header="Objectives" key="2">
                 <p>
-                  Is there anyone who doesn't love listening to stories? Right
-                  from our toddler days, we humans have this insatiable craving
-                  for tales, of the known and the unknown, that is satisfied
-                  first by our parents and then a plethora of other sources. Go
-                  through a host of fascinating stories from KidsGen, including
-                  fables and fairytales, moral stories, short stories,
-                  mythological stories, classic stories and your favourite -
-                  animal stories. If you love reading these interesting stories
-                  for kids, click here and share them with all your young
-                  friends. Have an enjoyable time!
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias aut, repellat ipsum facere voluptate dicta obcaecati
+                  deserunt nobis suscipit eaque
                 </p>
               </Panel>
             </Collapse>

@@ -96,7 +96,6 @@
   cursor: pointer;
   background-color: white;
   color: black;
-  text-align: left;
   border: solid transparent;
   margin-right: 1rem;
   border: 2px solid #9597a2;
@@ -162,8 +161,13 @@
 }
 @media (max-width: 365px) {
   .connect-with-me {
-    font-size: 0.6rem;
-    margin-right: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .home-button {
+    margin-top: -1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 .Typewriter__wrapper {
@@ -370,7 +374,6 @@
 }
 .purple1 {
   font-size: 20px;
-  background-color: #d0fdfd;
 }
 /* WHY US */
 .WhyUsWrap {
