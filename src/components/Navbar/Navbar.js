@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import logoNav from "../Assets/logoNav.PNG";
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Nav = () => {

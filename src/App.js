@@ -15,8 +15,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/skills" component={Skills} />

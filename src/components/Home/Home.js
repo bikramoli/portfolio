@@ -3,6 +3,7 @@ import { useHistory } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 import Introduction from "./Introduction";
+import Nav from "../Navbar/Navbar";
 import Services from "../Services/Services";
 import ProjectHome from "../Projects/ProjectHome";
 import Statistic from "../staistics/Statistics";
@@ -32,6 +33,7 @@ function Home() {
           <strong className="main-name"> D E V E L O P E R</strong>
         </h1>
       </Container>
+      <Nav />
       <div className="home-main"></div>
 
       <Container className="home-bottom">
