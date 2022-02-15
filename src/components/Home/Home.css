@@ -45,11 +45,11 @@
 }
 .home-top {
   height: 100%;
-  margin-top: 9rem;
+  margin-top: 1rem;
 }
 .home-main {
   background-image: url(../Assets/cover1.jpg);
-  height: 50vh;
+  height: 60vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -78,8 +78,10 @@
   text-decoration: overline;
 }
 .home-button {
-  display: flex;
-  flex-wrap: wrap;
+  background-color: rebeccapurple;
+}
+.home-bottom {
+  padding-bottom: 2rem;
 }
 .connect-with-me {
   display: inline-block;
@@ -90,15 +92,15 @@
   -ms-user-select: none;
   user-select: none;
   font-size: 1rem;
-  border-radius: 0.3rem;
-  border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
-  background-color: white;
+  background-color: transparent;
   color: black;
-  border: solid transparent;
   margin-right: 1rem;
-  border: 2px solid #9597a2;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border-radius: 50em;
+  border: 4px solid transparent;
 }
 .connect-with-me:hover {
   border: solid white;

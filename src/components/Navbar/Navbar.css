@@ -79,8 +79,10 @@ nav .nav_content_container .nav_logo_container {
   font-family: Agustina;
   font-size: 30px;
   font-weight: bold;
-  color: black;
   margin-top: 1rem;
+  /* color: black;
+  text-shadow: 2px 2px 8px rgb(54, 133, 235); */
+  color: white;
   text-shadow: 2px 2px 8px rgb(54, 133, 235);
 }
 .nav-signature:hover {
@@ -152,7 +154,7 @@ nav .nav_content_container .nav_text_links li:hover::before {
 }
 
 nav .nav_content_container .contact_button a button {
-  color: black;
+  color: white;
   padding: 8px 20px;
   letter-spacing: 0.5px;
   font-size: 1.1rem;

@@ -20,40 +20,41 @@ function Home() {
   }
   return (
     <section>
-      <Container className="home-top">
-        <h1 className="heading-first">
-          <span>B I K R A M </span>{" "}
-          <span className="wave" role="img" aria-labelledby="wave">
-            O L I
-          </span>
-          <div className="line"></div>
-        </h1>
-        <h1 className="heading-second">
-          <strong className="heading-name-first"> I'M</strong>
-          <strong className="main-name"> D E V E L O P E R</strong>
-        </h1>
-      </Container>
-      <Nav />
-      <div className="home-main"></div>
+      <div style={{ backgroundColor: "#F0F8FF" }}>
+        <Container className="home-top">
+          <h1 className="heading-first">
+            <span>B I K R A M </span>{" "}
+            <span className="wave" role="img" aria-labelledby="wave">
+              O L I
+            </span>
+            <div className="line"></div>
+          </h1>
+          <h1 className="heading-second">
+            <strong className="heading-name-first"> I'M</strong>
+            <strong className="main-name"> D E V E L O P E R</strong>
+          </h1>
+        </Container>
+        <Nav />
+        <div className="home-main"></div>
 
-      <Container className="home-bottom">
-        <div className="typewritter">
-          <Typewriter
-            options={{
-              strings: [
-                "Web Designer",
-                "Frontend Developer",
-                "MERN Stack Developer",
-                "Open Source Contributor",
-              ],
-              autoStart: true,
-              loop: true,
-              deleteSpeed: 50,
-            }}
-          />
-          <br />
-        </div>
-        <div className="home-button">
+        <Container className="home-bottom">
+          <div className="typewritter">
+            <Typewriter
+              options={{
+                strings: [
+                  "Web Designer",
+                  "Frontend Developer",
+                  "MERN Stack Developer",
+                  "Open Source Contributor",
+                ],
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 50,
+              }}
+            />
+            <br />
+          </div>
+
           <button onClick={handleMoreAboutMe} className="connect-with-me">
             MORE ABOUT ME
           </button>
@@ -63,8 +64,8 @@ function Home() {
           >
             CONNECT WITH ME
           </button>
-        </div>
-      </Container>
+        </Container>
+      </div>
 
       <div>
         <Services />
