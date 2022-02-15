@@ -30,7 +30,7 @@ function Home() {
             <div className="line"></div>
           </h1>
           <h1 className="heading-second">
-            <strong className="heading-name-first"> I'M</strong>
+            {/* <strong className="heading-name-first"> A</strong> */}
             <strong className="main-name"> D E V E L O P E R</strong>
           </h1>
         </Container>
