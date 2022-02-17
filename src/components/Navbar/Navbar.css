@@ -16,11 +16,10 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-
   /* position: fixed;
   padding: 10px 0;
-  top: 0;
-  left: 0; */
+  top: 0; */
+  left: 0;
   width: 100%;
   z-index: 10;
   background: none;
@@ -41,6 +40,7 @@ nav {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: rgb(77, 77, 110);
+  border-top: 10px solid white;
 }
 .stickyNav {
   border-bottom: solid rgb(77, 77, 110);

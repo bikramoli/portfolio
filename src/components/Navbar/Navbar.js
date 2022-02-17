@@ -2,6 +2,7 @@ import { useRef } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import Typewriter from "typewriter-effect";
 
 const Nav = () => {
   const burgerMenuRef = useRef();
@@ -25,7 +26,18 @@ const Nav = () => {
     <nav ref={navRef}>
       <div className="nav_left_content nav_content_container">
         <div className="nav_logo_container nav_container_item">
-          <h1 className="nav-signature">BikramOli</h1>
+          <h1 className="nav-signature wave">BikramOli</h1>
+          {/* <strong style={{ color: "white", paddingLeft: "20px" }}>
+            D E V E L O P E R
+          </strong> */}
+          {/* <Typewriter
+            options={{
+              strings: ["D E V E L O P E R"],
+              autoStart: true,
+              loop: true,
+              deleteSpeed: 50,
+            }}
+          /> */}
         </div>
 
         <ul

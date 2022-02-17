@@ -1,10 +1,13 @@
+.font-link {
+  font-family: "Hanalei Fill", cursive;
+}
 /* --------- */
 /* Home section */
 /* --------- */
+
 .wave {
-  padding-left: 15px;
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
+  animation-duration: 4.1s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
@@ -15,13 +18,13 @@
     transform: rotate(0deg);
   }
   10% {
-    transform: rotate(14deg);
+    transform: rotate(10deg);
   } /* The following five values can be played with to make the waving more or less extreme */
   20% {
     transform: rotate(-8deg);
   }
   30% {
-    transform: rotate(14deg);
+    transform: rotate(10deg);
   }
   40% {
     transform: rotate(-4deg);
@@ -45,7 +48,8 @@
 }
 .home-top {
   height: 100%;
-  margin-top: 1rem;
+
+  padding-top: 2rem;
 }
 .home-main {
   background-image: url(../Assets/cover1.jpg);
@@ -53,6 +57,7 @@
   background-position: center;
   background-repeat: no-repeat;
   /* background-size: cover; */
+  background-size: 2600px;
   position: relative;
 }
 
@@ -63,9 +68,9 @@
 }
 
 .heading-first {
-  font-size: 1.2em;
+  font-size: 2.2em;
   font-weight: 900 !important;
-  color: rgb(134, 130, 130);
+  color: black;
 }
 
 .line-Up {
@@ -96,29 +101,104 @@
   color: black;
   margin-right: 1rem;
   background: linear-gradient(#f0f8ff, #f0f8ff) padding-box,
-    linear-gradient(to right, rgb(36, 32, 32), blue) border-box;
-  border-radius: 30em;
-  border: 2.5px solid transparent;
+    linear-gradient(45deg, slateblue, coral) border-box;
+  border: 2px solid transparent;
 }
 .connect-with-me:hover {
-  border: solid white;
+  transform: scale(1.1);
 }
 
-.heading-name {
-  font-size: 4em !important;
+.heading-name-first {
+  font-size: 3em !important;
   display: flex;
   flex-wrap: wrap;
   color: white;
   justify-content: left;
-  width: 500px;
 }
 
 .main-name {
-  background: -webkit-linear-gradient(lightblue, black);
+  /* background: -webkit-linear-gradient(lightblue, black);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: black;
+  font-size: 8rem;
+}
+/* thought */
+.thought {
+  display: flex;
+  background-color: rgb(233, 229, 229);
+  top: 10px;
+  left: 300px;
+  padding: 20px;
+  border-radius: 30px;
+  min-width: 250px;
+  max-width: 290px;
+  min-height: 40px;
+  margin: 20px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
 }
 
+.thought:before,
+.thought:after {
+  content: "";
+  background-color: rgb(233, 229, 229);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.thought:before {
+  width: 44px;
+  height: 44px;
+  top: -12px;
+  left: 28px;
+  box-shadow: -50px 30px 0 -1px rgb(233, 229, 229);
+}
+.thought:after {
+  bottom: -10px;
+  right: 26px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 40px -34px 0 0 rgb(233, 229, 229),
+    20px 29px 0 -2px rgb(233, 229, 229), 44px 47px 0 -6px rgb(233, 229, 229),
+    75px 55px 0 -7px rgb(233, 229, 229);
+  animation-name: ubble;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes ubble {
+  0% {
+    box-shadow: 40px -34px 0 0 rgb(233, 229, 229),
+      20px 29px 0 -100px rgb(233, 229, 229),
+      44px 47px 0 -100px rgb(233, 229, 229),
+      75px 55px 0 -100px rgb(233, 229, 229);
+  }
+  30% {
+    box-shadow: 40px -34px 0 0 rgb(233, 229, 229),
+      20px 29px 0 -100px rgb(233, 229, 229),
+      44px 47px 0 -100px rgb(233, 229, 229), 75px 55px 0 -7px rgb(233, 229, 229);
+  }
+  60% {
+    box-shadow: 40px -34px 0 0 rgb(233, 229, 229),
+      20px 29px 0 -100px rgb(233, 229, 229), 44px 47px 0 -3px rgb(233, 229, 229),
+      75px 55px 0 -7px rgb(233, 229, 229);
+  }
+  100% {
+    box-shadow: 40px -34px 0 0 rgb(233, 229, 229),
+      20px 29px 0 -1px rgb(233, 229, 229), 44px 47px 0 -3px rgb(233, 229, 229),
+      75px 55px 0 -7px rgb(233, 229, 229);
+  }
+}
+/* thought */
+@media only screen and (max-width: 1196px) {
+  .thought {
+    left: 150px;
+  }
+}
 @media only screen and (max-width: 996px) {
   .main-name {
     font-size: 0.9em;
@@ -137,7 +217,12 @@
   .home-bottom {
     text-align: center;
   }
+  .thought {
+    top: 10px;
+    left: 100px;
+  }
 }
+
 @media only screen and (max-width: 566px) {
   .main-name {
     font-size: 0.9em;
@@ -159,6 +244,11 @@
   .home-main {
     opacity: none;
   }
+  .thought {
+    top: 10px;
+    left: 0px;
+    display: none;
+  }
 }
 @media (max-width: 365px) {
   .connect-with-me {
@@ -170,14 +260,20 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .thought {
+    top: 10px;
+    left: 100px;
+    display: none;
+  }
 }
 .Typewriter__wrapper {
   font-size: 1.2em !important;
   color: black !important;
   font-weight: 600 !important;
+  font-family: cursive;
 }
 .Typewriter__cursor {
-  font-size: 1.4em !important;
+  font-size: 2.4em !important;
   color: blueviolet !important;
 }
 
@@ -188,6 +284,9 @@
   }
   .Typewriter__cursor {
     font-size: 1em !important;
+  }
+  .thought {
+    left: 0px;
   }
 }
 
